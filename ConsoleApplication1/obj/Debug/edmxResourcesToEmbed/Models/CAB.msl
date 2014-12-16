@@ -1,0 +1,2541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LogiCABStoreContainer" CdmEntityContainer="CAB">
+    <EntitySetMapping Name="Address">
+      <EntityTypeMapping TypeName="LogiCAB.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="StateProvince" ColumnName="StateProvince" />
+          <ScalarProperty Name="ZipPostal" ColumnName="ZipPostal" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+          <ScalarProperty Name="GCRecord" ColumnName="GCRecord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Country">
+      <EntityTypeMapping TypeName="LogiCAB.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PhoneCode" ColumnName="PhoneCode" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+          <ScalarProperty Name="GCRecord" ColumnName="GCRecord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dtproperties">
+      <EntityTypeMapping TypeName="LogiCAB.dtproperties">
+        <MappingFragment StoreEntitySet="dtproperties">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="objectid" ColumnName="objectid" />
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="uvalue" ColumnName="uvalue" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+          <ScalarProperty Name="version" ColumnName="version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ErrorMessage">
+      <EntityTypeMapping TypeName="LogiCAB.ErrorMessage">
+        <MappingFragment StoreEntitySet="ErrorMessage">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+          <ScalarProperty Name="GCRecord" ColumnName="GCRecord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ADDITIONAL_COST">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ADDITIONAL_COST">
+        <MappingFragment StoreEntitySet="F_CAB_ADDITIONAL_COST">
+          <ScalarProperty Name="CAAD_SEQUENCE" ColumnName="CAAD_SEQUENCE" />
+          <ScalarProperty Name="CAAD_FK_GROWER" ColumnName="CAAD_FK_GROWER" />
+          <ScalarProperty Name="CAAD_FK_BUYER" ColumnName="CAAD_FK_BUYER" />
+          <ScalarProperty Name="CAAD_FK_CDGR" ColumnName="CAAD_FK_CDGR" />
+          <ScalarProperty Name="CAAD_FK_CDCB" ColumnName="CAAD_FK_CDCB" />
+          <ScalarProperty Name="CAAD_PERCENTAGE" ColumnName="CAAD_PERCENTAGE" />
+          <ScalarProperty Name="CAAD_CURR_MULTI" ColumnName="CAAD_CURR_MULTI" />
+          <ScalarProperty Name="CAAD_AMOUNT" ColumnName="CAAD_AMOUNT" />
+          <ScalarProperty Name="CAAD_DESCRIPTION" ColumnName="CAAD_DESCRIPTION" />
+          <ScalarProperty Name="CAAD_CREATED_ON" ColumnName="CAAD_CREATED_ON" />
+          <ScalarProperty Name="CAAD_CREATED_BY" ColumnName="CAAD_CREATED_BY" />
+          <ScalarProperty Name="CAAD_MODIFIED_ON" ColumnName="CAAD_MODIFIED_ON" />
+          <ScalarProperty Name="CAAD_MODIFIED_BY" ColumnName="CAAD_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ADDRESS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ADDRESS">
+        <MappingFragment StoreEntitySet="F_CAB_ADDRESS">
+          <ScalarProperty Name="ADDR_SEQUENCE" ColumnName="ADDR_SEQUENCE" />
+          <ScalarProperty Name="ADDR_FK_ORGANISATION" ColumnName="ADDR_FK_ORGANISATION" />
+          <ScalarProperty Name="ADDR_FK_CDCO_SEQ" ColumnName="ADDR_FK_CDCO_SEQ" />
+          <ScalarProperty Name="ADDR_FK_CDAT_SEQ" ColumnName="ADDR_FK_CDAT_SEQ" />
+          <ScalarProperty Name="ADDR_STREET" ColumnName="ADDR_STREET" />
+          <ScalarProperty Name="ADDR_NO" ColumnName="ADDR_NO" />
+          <ScalarProperty Name="ADDR_NO_SUFFIX" ColumnName="ADDR_NO_SUFFIX" />
+          <ScalarProperty Name="ADDR_ZIPCODE" ColumnName="ADDR_ZIPCODE" />
+          <ScalarProperty Name="ADDR_CITY" ColumnName="ADDR_CITY" />
+          <ScalarProperty Name="ADDR_GLN_LOCATION_CODE" ColumnName="ADDR_GLN_LOCATION_CODE" />
+          <ScalarProperty Name="ADDR_LOCATION_DESCRIPTION" ColumnName="ADDR_LOCATION_DESCRIPTION" />
+          <ScalarProperty Name="ADDR_ENTRY_DATE_FLORECOM" ColumnName="ADDR_ENTRY_DATE_FLORECOM" />
+          <ScalarProperty Name="ADDR_EXPIRE_DATE_FLORECOM" ColumnName="ADDR_EXPIRE_DATE_FLORECOM" />
+          <ScalarProperty Name="ADDR_CHANGE_DATE_FLORECOM" ColumnName="ADDR_CHANGE_DATE_FLORECOM" />
+          <ScalarProperty Name="ADDR_COMPANY_ENTRY_DATE_FLORECOM" ColumnName="ADDR_COMPANY_ENTRY_DATE_FLORECOM" />
+          <ScalarProperty Name="ADDR_GPS_LATITUDE_FLORECOM" ColumnName="ADDR_GPS_LATITUDE_FLORECOM" />
+          <ScalarProperty Name="ADDR_GPS_LONGTITUDE_FLORECOM" ColumnName="ADDR_GPS_LONGTITUDE_FLORECOM" />
+          <ScalarProperty Name="ADDR_AUTO_SYNC_FLORECOM" ColumnName="ADDR_AUTO_SYNC_FLORECOM" />
+          <ScalarProperty Name="ADDR_LOCATION_PRIORITY" ColumnName="ADDR_LOCATION_PRIORITY" />
+          <ScalarProperty Name="ADDR_CREATED_BY" ColumnName="ADDR_CREATED_BY" />
+          <ScalarProperty Name="ADDR_CREATED_ON" ColumnName="ADDR_CREATED_ON" />
+          <ScalarProperty Name="ADDR_MODIFIED_BY" ColumnName="ADDR_MODIFIED_BY" />
+          <ScalarProperty Name="ADDR_MODIFIED_ON" ColumnName="ADDR_MODIFIED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_AUCTION">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_AUCTION">
+        <MappingFragment StoreEntitySet="F_CAB_AUCTION">
+          <ScalarProperty Name="AUCT_SEQUENCE" ColumnName="AUCT_SEQUENCE" />
+          <ScalarProperty Name="AUCT_FK_ORGA" ColumnName="AUCT_FK_ORGA" />
+          <ScalarProperty Name="AUCT_ID" ColumnName="AUCT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_AUTH_GROUP_PERSON_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_AUTH_GROUP_PERSON_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_AUTH_GROUP_PERSON_MATRIX">
+          <ScalarProperty Name="AGPM_SEQUENCE" ColumnName="AGPM_SEQUENCE" />
+          <ScalarProperty Name="AGPM_FK_GROUP" ColumnName="AGPM_FK_GROUP" />
+          <ScalarProperty Name="AGPM_FK_PERSON" ColumnName="AGPM_FK_PERSON" />
+          <ScalarProperty Name="AGPM_FREQ_MAIL" ColumnName="AGPM_FREQ_MAIL" />
+          <ScalarProperty Name="AGPM_LAST_MAIL_DATE" ColumnName="AGPM_LAST_MAIL_DATE" />
+          <ScalarProperty Name="AGPM_BLOCKED_YN" ColumnName="AGPM_BLOCKED_YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_BUYER">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_BUYER">
+        <MappingFragment StoreEntitySet="F_CAB_BUYER">
+          <ScalarProperty Name="BUYR_SEQUENCE" ColumnName="BUYR_SEQUENCE" />
+          <ScalarProperty Name="BUYR_FK_ORGA" ColumnName="BUYR_FK_ORGA" />
+          <ScalarProperty Name="BUYR_MOBILE_NO" ColumnName="BUYR_MOBILE_NO" />
+          <ScalarProperty Name="BUYR_MPS" ColumnName="BUYR_MPS" />
+          <ScalarProperty Name="BUYR_ISO_YN" ColumnName="BUYR_ISO_YN" />
+          <ScalarProperty Name="BUYR_FLORIMARK_YN" ColumnName="BUYR_FLORIMARK_YN" />
+          <ScalarProperty Name="BUYR_MPS_GAP" ColumnName="BUYR_MPS_GAP" />
+          <ScalarProperty Name="BUYR_DEMO_YN" ColumnName="BUYR_DEMO_YN" />
+          <ScalarProperty Name="BUYR_TRANSPORT_TYPE" ColumnName="BUYR_TRANSPORT_TYPE" />
+          <ScalarProperty Name="BUYR_CREATED_ON" ColumnName="BUYR_CREATED_ON" />
+          <ScalarProperty Name="BUYR_CREATED_BY" ColumnName="BUYR_CREATED_BY" />
+          <ScalarProperty Name="BUYR_MODIFIED_ON" ColumnName="BUYR_MODIFIED_ON" />
+          <ScalarProperty Name="BUYR_MODIFIED_BY" ColumnName="BUYR_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_BUYER_AUCTION_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_BUYER_AUCTION_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_BUYER_AUCTION_MATRIX">
+          <ScalarProperty Name="BAMA_SEQUENCE" ColumnName="BAMA_SEQUENCE" />
+          <ScalarProperty Name="BAMA_FK_BUYER" ColumnName="BAMA_FK_BUYER" />
+          <ScalarProperty Name="BAMA_FK_AUCTION" ColumnName="BAMA_FK_AUCTION" />
+          <ScalarProperty Name="BAMA_DELIVERY_LOCATION" ColumnName="BAMA_DELIVERY_LOCATION" />
+          <ScalarProperty Name="BAMA_DEBTOR_NUMBER" ColumnName="BAMA_DEBTOR_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_BUYER_EKT">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_BUYER_EKT">
+        <MappingFragment StoreEntitySet="F_CAB_BUYER_EKT">
+          <ScalarProperty Name="BEKT_SEQUENCE" ColumnName="BEKT_SEQUENCE" />
+          <ScalarProperty Name="BEKT_FK_BUYER" ColumnName="BEKT_FK_BUYER" />
+          <ScalarProperty Name="BEKT_UNB_GROWER_EAN" ColumnName="BEKT_UNB_GROWER_EAN" />
+          <ScalarProperty Name="BEKT_FLA_VBA" ColumnName="BEKT_FLA_VBA" />
+          <ScalarProperty Name="BEKT_FLA_BVH" ColumnName="BEKT_FLA_BVH" />
+          <ScalarProperty Name="BEKT_BY_VBA" ColumnName="BEKT_BY_VBA" />
+          <ScalarProperty Name="BEKT_BY_BVH" ColumnName="BEKT_BY_BVH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_BUYER_INTEREST">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_BUYER_INTEREST">
+        <MappingFragment StoreEntitySet="F_CAB_BUYER_INTEREST">
+          <ScalarProperty Name="BUIN_SEQUENCE" ColumnName="BUIN_SEQUENCE" />
+          <ScalarProperty Name="BUIN_FK_BUYER" ColumnName="BUIN_FK_BUYER" />
+          <ScalarProperty Name="BUIN_FK_CAB_CODE" ColumnName="BUIN_FK_CAB_CODE" />
+          <ScalarProperty Name="BUIN_FK_GROWER" ColumnName="BUIN_FK_GROWER" />
+          <ScalarProperty Name="BUIN_INTEREST_PRIO" ColumnName="BUIN_INTEREST_PRIO" />
+          <ScalarProperty Name="BUIN_START_DATE" ColumnName="BUIN_START_DATE" />
+          <ScalarProperty Name="BUIN_END_DATE" ColumnName="BUIN_END_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CAB_CASK_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CAB_CASK_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_CAB_CASK_MATRIX">
+          <ScalarProperty Name="CACA_SEQUENCE" ColumnName="CACA_SEQUENCE" />
+          <ScalarProperty Name="CACA_FK_CAB_CODE" ColumnName="CACA_FK_CAB_CODE" />
+          <ScalarProperty Name="CACA_FK_CASK" ColumnName="CACA_FK_CASK" />
+          <ScalarProperty Name="CACA_NUM_OF_UNITS" ColumnName="CACA_NUM_OF_UNITS" />
+          <ScalarProperty Name="CACA_UNITS_PER_LAYER" ColumnName="CACA_UNITS_PER_LAYER" />
+          <ScalarProperty Name="CACA_LAYERS_PER_TROLLEY" ColumnName="CACA_LAYERS_PER_TROLLEY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CAB_DETAIL">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CAB_DETAIL">
+        <MappingFragment StoreEntitySet="F_CAB_CAB_DETAIL">
+          <ScalarProperty Name="CABD_SEQUENCE" ColumnName="CABD_SEQUENCE" />
+          <ScalarProperty Name="CABD_FK_CAB_CODE" ColumnName="CABD_FK_CAB_CODE" />
+          <ScalarProperty Name="CABD_FK_TYPE" ColumnName="CABD_FK_TYPE" />
+          <ScalarProperty Name="CABD_VALUE" ColumnName="CABD_VALUE" />
+          <ScalarProperty Name="CABD_VALUE_DESC" ColumnName="CABD_VALUE_DESC" />
+          <ScalarProperty Name="CABD_VALUE_DESC_UPPER" ColumnName="CABD_VALUE_DESC_UPPER" />
+          <ScalarProperty Name="CABD_ORDER" ColumnName="CABD_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CAB_PROP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CAB_PROP">
+        <MappingFragment StoreEntitySet="F_CAB_CAB_PROP">
+          <ScalarProperty Name="PROP_SEQUENCE" ColumnName="PROP_SEQUENCE" />
+          <ScalarProperty Name="PROP_FK_CABC_SEQ" ColumnName="PROP_FK_CABC_SEQ" />
+          <ScalarProperty Name="PROP_FK_CDLA_SEQ" ColumnName="PROP_FK_CDLA_SEQ" />
+          <ScalarProperty Name="PROP_FK_CDMG_SEQ" ColumnName="PROP_FK_CDMG_SEQ" />
+          <ScalarProperty Name="PROP_MAIN_GROUP_TRANS_DESC" ColumnName="PROP_MAIN_GROUP_TRANS_DESC" />
+          <ScalarProperty Name="PROP_GROUP_TRANS_DESC" ColumnName="PROP_GROUP_TRANS_DESC" />
+          <ScalarProperty Name="PROP_GROUP_TYPE_TRANS_DESC" ColumnName="PROP_GROUP_TYPE_TRANS_DESC" />
+          <ScalarProperty Name="PROP_CABC_CAB_CODE" ColumnName="PROP_CABC_CAB_CODE" />
+          <ScalarProperty Name="PROP_HEIGHT" ColumnName="PROP_HEIGHT" />
+          <ScalarProperty Name="PROP_POTSIZE" ColumnName="PROP_POTSIZE" />
+          <ScalarProperty Name="PROP_POTTYPE" ColumnName="PROP_POTTYPE" />
+          <ScalarProperty Name="PROP_COLOR" ColumnName="PROP_COLOR" />
+          <ScalarProperty Name="PROP_BUD" ColumnName="PROP_BUD" />
+          <ScalarProperty Name="PROP_QUALITY" ColumnName="PROP_QUALITY" />
+          <ScalarProperty Name="PROP_PROPERTY4" ColumnName="PROP_PROPERTY4" />
+          <ScalarProperty Name="PROP_PROPERTY5" ColumnName="PROP_PROPERTY5" />
+          <ScalarProperty Name="PROP_PROPERTY6" ColumnName="PROP_PROPERTY6" />
+          <ScalarProperty Name="PROP_WEIGHT" ColumnName="PROP_WEIGHT" />
+          <ScalarProperty Name="PROP_LATIN_NAME" ColumnName="PROP_LATIN_NAME" />
+          <ScalarProperty Name="PROP_FIN" ColumnName="PROP_FIN" />
+          <ScalarProperty Name="PROP_SHAPE" ColumnName="PROP_SHAPE" />
+          <ScalarProperty Name="PROP_LENGTH" ColumnName="PROP_LENGTH" />
+          <ScalarProperty Name="PROP_CAPACITY" ColumnName="PROP_CAPACITY" />
+          <ScalarProperty Name="PROP_SHAPE_CASK" ColumnName="PROP_SHAPE_CASK" />
+          <ScalarProperty Name="PROP_SIZE" ColumnName="PROP_SIZE" />
+          <ScalarProperty Name="PROP_BRAND" ColumnName="PROP_BRAND" />
+          <ScalarProperty Name="PROP_DIAMETER" ColumnName="PROP_DIAMETER" />
+          <ScalarProperty Name="PROP_ORDER" ColumnName="PROP_ORDER" />
+          <ScalarProperty Name="PROP_LAST_SYNCHRONIZED" ColumnName="PROP_LAST_SYNCHRONIZED" />
+          <ScalarProperty Name="PROP_PRE1" ColumnName="PROP_PRE1" />
+          <ScalarProperty Name="PROP_VAL1" ColumnName="PROP_VAL1" />
+          <ScalarProperty Name="PROP_VBN_VAL1" ColumnName="PROP_VBN_VAL1" />
+          <ScalarProperty Name="PROP_SRTC1" ColumnName="PROP_SRTC1" />
+          <ScalarProperty Name="PROP_SUF1" ColumnName="PROP_SUF1" />
+          <ScalarProperty Name="PROP_DESC1" ColumnName="PROP_DESC1" />
+          <ScalarProperty Name="PROP_PRE2" ColumnName="PROP_PRE2" />
+          <ScalarProperty Name="PROP_VAL2" ColumnName="PROP_VAL2" />
+          <ScalarProperty Name="PROP_VBN_VAL2" ColumnName="PROP_VBN_VAL2" />
+          <ScalarProperty Name="PROP_SRTC2" ColumnName="PROP_SRTC2" />
+          <ScalarProperty Name="PROP_SUF2" ColumnName="PROP_SUF2" />
+          <ScalarProperty Name="PROP_DESC2" ColumnName="PROP_DESC2" />
+          <ScalarProperty Name="PROP_PRE3" ColumnName="PROP_PRE3" />
+          <ScalarProperty Name="PROP_VAL3" ColumnName="PROP_VAL3" />
+          <ScalarProperty Name="PROP_VBN_VAL3" ColumnName="PROP_VBN_VAL3" />
+          <ScalarProperty Name="PROP_SRTC3" ColumnName="PROP_SRTC3" />
+          <ScalarProperty Name="PROP_SUF3" ColumnName="PROP_SUF3" />
+          <ScalarProperty Name="PROP_DESC3" ColumnName="PROP_DESC3" />
+          <ScalarProperty Name="PROP_PRE4" ColumnName="PROP_PRE4" />
+          <ScalarProperty Name="PROP_VAL4" ColumnName="PROP_VAL4" />
+          <ScalarProperty Name="PROP_VBN_VAL4" ColumnName="PROP_VBN_VAL4" />
+          <ScalarProperty Name="PROP_SRTC4" ColumnName="PROP_SRTC4" />
+          <ScalarProperty Name="PROP_SUF4" ColumnName="PROP_SUF4" />
+          <ScalarProperty Name="PROP_DESC4" ColumnName="PROP_DESC4" />
+          <ScalarProperty Name="PROP_PRE5" ColumnName="PROP_PRE5" />
+          <ScalarProperty Name="PROP_VAL5" ColumnName="PROP_VAL5" />
+          <ScalarProperty Name="PROP_VBN_VAL5" ColumnName="PROP_VBN_VAL5" />
+          <ScalarProperty Name="PROP_SRTC5" ColumnName="PROP_SRTC5" />
+          <ScalarProperty Name="PROP_SUF5" ColumnName="PROP_SUF5" />
+          <ScalarProperty Name="PROP_DESC5" ColumnName="PROP_DESC5" />
+          <ScalarProperty Name="PROP_PRE6" ColumnName="PROP_PRE6" />
+          <ScalarProperty Name="PROP_VAL6" ColumnName="PROP_VAL6" />
+          <ScalarProperty Name="PROP_VBN_VAL6" ColumnName="PROP_VBN_VAL6" />
+          <ScalarProperty Name="PROP_SRTC6" ColumnName="PROP_SRTC6" />
+          <ScalarProperty Name="PROP_SUF6" ColumnName="PROP_SUF6" />
+          <ScalarProperty Name="PROP_DESC6" ColumnName="PROP_DESC6" />
+          <ScalarProperty Name="PROP_DESC_PROPS" ColumnName="PROP_DESC_PROPS" />
+          <ScalarProperty Name="PROP_CAB_DESC" ColumnName="PROP_CAB_DESC" />
+          <ScalarProperty Name="PROP_PROPS" ColumnName="PROP_PROPS" />
+          <ScalarProperty Name="PROP_DESC_ALL_PROPS" ColumnName="PROP_DESC_ALL_PROPS" />
+          <ScalarProperty Name="PROP_CREATED_ON" ColumnName="PROP_CREATED_ON" />
+          <ScalarProperty Name="PROP_CREATED_BY" ColumnName="PROP_CREATED_BY" />
+          <ScalarProperty Name="PROP_MODIFIED_ON" ColumnName="PROP_MODIFIED_ON" />
+          <ScalarProperty Name="PROP_MODIFIED_BY" ColumnName="PROP_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CAB_PROP_ASSORT">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CAB_PROP_ASSORT">
+        <MappingFragment StoreEntitySet="F_CAB_CAB_PROP_ASSORT">
+          <ScalarProperty Name="PRAS_SEQUENCE" ColumnName="PRAS_SEQUENCE" />
+          <ScalarProperty Name="PRAS_FK_GRAS_SEQ" ColumnName="PRAS_FK_GRAS_SEQ" />
+          <ScalarProperty Name="PRAS_FK_CDMG_SEQ" ColumnName="PRAS_FK_CDMG_SEQ" />
+          <ScalarProperty Name="PRAS_FK_CABC_SEQ" ColumnName="PRAS_FK_CABC_SEQ" />
+          <ScalarProperty Name="PRAS_LAST_SYNCHRONIZED" ColumnName="PRAS_LAST_SYNCHRONIZED" />
+          <ScalarProperty Name="PRAS_PRE1" ColumnName="PRAS_PRE1" />
+          <ScalarProperty Name="PRAS_VAL1" ColumnName="PRAS_VAL1" />
+          <ScalarProperty Name="PRAS_VBN_VAL1" ColumnName="PRAS_VBN_VAL1" />
+          <ScalarProperty Name="PRAS_SRTC1" ColumnName="PRAS_SRTC1" />
+          <ScalarProperty Name="PRAS_SUF1" ColumnName="PRAS_SUF1" />
+          <ScalarProperty Name="PRAS_DESC1" ColumnName="PRAS_DESC1" />
+          <ScalarProperty Name="PRAS_PRE2" ColumnName="PRAS_PRE2" />
+          <ScalarProperty Name="PRAS_VAL2" ColumnName="PRAS_VAL2" />
+          <ScalarProperty Name="PRAS_VBN_VAL2" ColumnName="PRAS_VBN_VAL2" />
+          <ScalarProperty Name="PRAS_SRTC2" ColumnName="PRAS_SRTC2" />
+          <ScalarProperty Name="PRAS_SUF2" ColumnName="PRAS_SUF2" />
+          <ScalarProperty Name="PRAS_DESC2" ColumnName="PRAS_DESC2" />
+          <ScalarProperty Name="PRAS_PRE3" ColumnName="PRAS_PRE3" />
+          <ScalarProperty Name="PRAS_VAL3" ColumnName="PRAS_VAL3" />
+          <ScalarProperty Name="PRAS_VBN_VAL3" ColumnName="PRAS_VBN_VAL3" />
+          <ScalarProperty Name="PRAS_SRTC3" ColumnName="PRAS_SRTC3" />
+          <ScalarProperty Name="PRAS_SUF3" ColumnName="PRAS_SUF3" />
+          <ScalarProperty Name="PRAS_DESC3" ColumnName="PRAS_DESC3" />
+          <ScalarProperty Name="PRAS_PRE4" ColumnName="PRAS_PRE4" />
+          <ScalarProperty Name="PRAS_VAL4" ColumnName="PRAS_VAL4" />
+          <ScalarProperty Name="PRAS_VBN_VAL4" ColumnName="PRAS_VBN_VAL4" />
+          <ScalarProperty Name="PRAS_SRTC4" ColumnName="PRAS_SRTC4" />
+          <ScalarProperty Name="PRAS_SUF4" ColumnName="PRAS_SUF4" />
+          <ScalarProperty Name="PRAS_DESC4" ColumnName="PRAS_DESC4" />
+          <ScalarProperty Name="PRAS_PRE5" ColumnName="PRAS_PRE5" />
+          <ScalarProperty Name="PRAS_VAL5" ColumnName="PRAS_VAL5" />
+          <ScalarProperty Name="PRAS_VBN_VAL5" ColumnName="PRAS_VBN_VAL5" />
+          <ScalarProperty Name="PRAS_SRTC5" ColumnName="PRAS_SRTC5" />
+          <ScalarProperty Name="PRAS_SUF5" ColumnName="PRAS_SUF5" />
+          <ScalarProperty Name="PRAS_DESC5" ColumnName="PRAS_DESC5" />
+          <ScalarProperty Name="PRAS_PRE6" ColumnName="PRAS_PRE6" />
+          <ScalarProperty Name="PRAS_VAL6" ColumnName="PRAS_VAL6" />
+          <ScalarProperty Name="PRAS_VBN_VAL6" ColumnName="PRAS_VBN_VAL6" />
+          <ScalarProperty Name="PRAS_SRTC6" ColumnName="PRAS_SRTC6" />
+          <ScalarProperty Name="PRAS_SUF6" ColumnName="PRAS_SUF6" />
+          <ScalarProperty Name="PRAS_DESC6" ColumnName="PRAS_DESC6" />
+          <ScalarProperty Name="PRAS_CREATED_ON" ColumnName="PRAS_CREATED_ON" />
+          <ScalarProperty Name="PRAS_CREATED_BY" ColumnName="PRAS_CREATED_BY" />
+          <ScalarProperty Name="PRAS_MODIFIED_ON" ColumnName="PRAS_MODIFIED_ON" />
+          <ScalarProperty Name="PRAS_MODIFIED_BY" ColumnName="PRAS_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CAB_VBN_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CAB_VBN_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_CAB_VBN_MATRIX">
+          <ScalarProperty Name="CVMA_SEQUENCE" ColumnName="CVMA_SEQUENCE" />
+          <ScalarProperty Name="CVMA_FK_CAB_CODE" ColumnName="CVMA_FK_CAB_CODE" />
+          <ScalarProperty Name="CVMA_FK_VBN_CODE" ColumnName="CVMA_FK_VBN_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_ADDRESS_TYPES">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_ADDRESS_TYPES">
+        <MappingFragment StoreEntitySet="F_CAB_CD_ADDRESS_TYPES">
+          <ScalarProperty Name="CDAT_SEQUENCE" ColumnName="CDAT_SEQUENCE" />
+          <ScalarProperty Name="CDAT_TYPE" ColumnName="CDAT_TYPE" />
+          <ScalarProperty Name="CDAT_GENERAL_DELIVERY_ADDRESS_YN" ColumnName="CDAT_GENERAL_DELIVERY_ADDRESS_YN" />
+          <ScalarProperty Name="CDAT_CREATED_ON" ColumnName="CDAT_CREATED_ON" />
+          <ScalarProperty Name="CDAT_CREATED_BY" ColumnName="CDAT_CREATED_BY" />
+          <ScalarProperty Name="CDAT_MODIFIED_ON" ColumnName="CDAT_MODIFIED_ON" />
+          <ScalarProperty Name="CDAT_MODIFIED_BY" ColumnName="CDAT_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_CAB_CODE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_CAB_CODE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_CAB_CODE">
+          <ScalarProperty Name="CABC_SEQUENCE" ColumnName="CABC_SEQUENCE" />
+          <ScalarProperty Name="CABC_CAB_CODE" ColumnName="CABC_CAB_CODE" />
+          <ScalarProperty Name="CABC_CAB_DESC" ColumnName="CABC_CAB_DESC" />
+          <ScalarProperty Name="CABC_CAB_DESC_UPPER" ColumnName="CABC_CAB_DESC_UPPER" />
+          <ScalarProperty Name="CABC_IS_AUTHORISED" ColumnName="CABC_IS_AUTHORISED" />
+          <ScalarProperty Name="CABC_FK_CAB_GROUP" ColumnName="CABC_FK_CAB_GROUP" />
+          <ScalarProperty Name="CABC_PICTURE" ColumnName="CABC_PICTURE" />
+          <ScalarProperty Name="CABC_FK_PICTURE" ColumnName="CABC_FK_PICTURE" />
+          <ScalarProperty Name="CABC_FK_PD_GROUP" ColumnName="CABC_FK_PD_GROUP" />
+          <ScalarProperty Name="CABC_CREATED_ON" ColumnName="CABC_CREATED_ON" />
+          <ScalarProperty Name="CABC_CREATED_BY" ColumnName="CABC_CREATED_BY" />
+          <ScalarProperty Name="CABC_MODIFIED_ON" ColumnName="CABC_MODIFIED_ON" />
+          <ScalarProperty Name="CABC_MODIFIED_BY" ColumnName="CABC_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_CAB_GROUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_CAB_GROUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_CAB_GROUP">
+          <ScalarProperty Name="CDGR_MODIFIED_BY" ColumnName="CDGR_MODIFIED_BY" />
+          <ScalarProperty Name="CDGR_MODIFIED_ON" ColumnName="CDGR_MODIFIED_ON" />
+          <ScalarProperty Name="CDGR_EXT_ID" ColumnName="CDGR_EXT_ID" />
+          <ScalarProperty Name="CDGR_SEQUENCE" ColumnName="CDGR_SEQUENCE" />
+          <ScalarProperty Name="CDGR_FK_GROUP_TYPE" ColumnName="CDGR_FK_GROUP_TYPE" />
+          <ScalarProperty Name="CDGR_DESC" ColumnName="CDGR_DESC" />
+          <ScalarProperty Name="CDGR_SORT_ORDER" ColumnName="CDGR_SORT_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_CAB_PROP_GROUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_CAB_PROP_GROUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_CAB_PROP_GROUP">
+          <ScalarProperty Name="CDPG_SEQUENCE" ColumnName="CDPG_SEQUENCE" />
+          <ScalarProperty Name="CDPG_DESC" ColumnName="CDPG_DESC" />
+          <ScalarProperty Name="CDPG_ORDER" ColumnName="CDPG_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_CAB_PROP_LOOKUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_CAB_PROP_LOOKUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_CAB_PROP_LOOKUP">
+          <ScalarProperty Name="CDPL_SEQUENCE" ColumnName="CDPL_SEQUENCE" />
+          <ScalarProperty Name="CDPL_FK_PROP_TYPE" ColumnName="CDPL_FK_PROP_TYPE" />
+          <ScalarProperty Name="CDPL_LOOKUP_VALUE" ColumnName="CDPL_LOOKUP_VALUE" />
+          <ScalarProperty Name="CDPL_LOOKUP_DESC" ColumnName="CDPL_LOOKUP_DESC" />
+          <ScalarProperty Name="CDPL_ORDER" ColumnName="CDPL_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_CAB_PROP_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_CAB_PROP_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_CAB_PROP_TYPE">
+          <ScalarProperty Name="CDPT_SEQUENCE" ColumnName="CDPT_SEQUENCE" />
+          <ScalarProperty Name="CDPT_DESC" ColumnName="CDPT_DESC" />
+          <ScalarProperty Name="CDPT_FK_PROP_GROUP" ColumnName="CDPT_FK_PROP_GROUP" />
+          <ScalarProperty Name="CDPT_FK_VBN_PROP_TYPE" ColumnName="CDPT_FK_VBN_PROP_TYPE" />
+          <ScalarProperty Name="CDPT_SYSTEM_VALUE" ColumnName="CDPT_SYSTEM_VALUE" />
+          <ScalarProperty Name="CDPT_DESC_PREFIX" ColumnName="CDPT_DESC_PREFIX" />
+          <ScalarProperty Name="CDPT_MANDATORY_YN" ColumnName="CDPT_MANDATORY_YN" />
+          <ScalarProperty Name="CDPT_DESC_SUFFIX" ColumnName="CDPT_DESC_SUFFIX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_CAB_VBN_LK_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_CAB_VBN_LK_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_CD_CAB_VBN_LK_MATRIX">
+          <ScalarProperty Name="CVLM_SEQUENCE" ColumnName="CVLM_SEQUENCE" />
+          <ScalarProperty Name="CVLM_FK_CAB_LOOKUP_VALUE" ColumnName="CVLM_FK_CAB_LOOKUP_VALUE" />
+          <ScalarProperty Name="CVLM_FK_VBN_LOOKUP_VALUE" ColumnName="CVLM_FK_VBN_LOOKUP_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_CASK">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_CASK">
+        <MappingFragment StoreEntitySet="F_CAB_CD_CASK">
+          <ScalarProperty Name="CDCA_SEQUENCE" ColumnName="CDCA_SEQUENCE" />
+          <ScalarProperty Name="CDCA_CASK_CODE" ColumnName="CDCA_CASK_CODE" />
+          <ScalarProperty Name="CDCA_CASK_DESC" ColumnName="CDCA_CASK_DESC" />
+          <ScalarProperty Name="CDCA_CASK_DESC_UPPER" ColumnName="CDCA_CASK_DESC_UPPER" />
+          <ScalarProperty Name="CDCA_ID" ColumnName="CDCA_ID" />
+          <ScalarProperty Name="CDCA_MIN_POTSIZE_CM" ColumnName="CDCA_MIN_POTSIZE_CM" />
+          <ScalarProperty Name="CDCA_MAX_POTSIZE_CM" ColumnName="CDCA_MAX_POTSIZE_CM" />
+          <ScalarProperty Name="CDCA_CASK_TYPE" ColumnName="CDCA_CASK_TYPE" />
+          <ScalarProperty Name="CDCA_ONE_OFF_YN" ColumnName="CDCA_ONE_OFF_YN" />
+          <ScalarProperty Name="CDCA_LENGTH" ColumnName="CDCA_LENGTH" />
+          <ScalarProperty Name="CDCA_WIDTH" ColumnName="CDCA_WIDTH" />
+          <ScalarProperty Name="CDCA_HEIGHT" ColumnName="CDCA_HEIGHT" />
+          <ScalarProperty Name="CDCA_COST_PRICE" ColumnName="CDCA_COST_PRICE" />
+          <ScalarProperty Name="CDCA_TRANSPORT_TYPE" ColumnName="CDCA_TRANSPORT_TYPE" />
+          <ScalarProperty Name="CDCA_CREATED_ON" ColumnName="CDCA_CREATED_ON" />
+          <ScalarProperty Name="CDCA_CREATED_BY" ColumnName="CDCA_CREATED_BY" />
+          <ScalarProperty Name="CDCA_MODIFED_ON" ColumnName="CDCA_MODIFED_ON" />
+          <ScalarProperty Name="CDCA_MODIFIED_BY" ColumnName="CDCA_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_CHARSET">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_CHARSET">
+        <MappingFragment StoreEntitySet="F_CAB_CD_CHARSET">
+          <ScalarProperty Name="CDCH_SEQUENCE" ColumnName="CDCH_SEQUENCE" />
+          <ScalarProperty Name="CDCH_CHARSET_DESC" ColumnName="CDCH_CHARSET_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_COUNTRY">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_COUNTRY">
+        <MappingFragment StoreEntitySet="F_CAB_CD_COUNTRY">
+          <ScalarProperty Name="CDCO_SEQUENCE" ColumnName="CDCO_SEQUENCE" />
+          <ScalarProperty Name="CDCO_COUNTRY_DESC" ColumnName="CDCO_COUNTRY_DESC" />
+          <ScalarProperty Name="CDCO_COUNTRY_CODE" ColumnName="CDCO_COUNTRY_CODE" />
+          <ScalarProperty Name="CDCO_DECIMAL_SEPARATOR" ColumnName="CDCO_DECIMAL_SEPARATOR" />
+          <ScalarProperty Name="CDCO_THOUSAND_SEPARATOR" ColumnName="CDCO_THOUSAND_SEPARATOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_CURRENCY">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_CURRENCY">
+        <MappingFragment StoreEntitySet="F_CAB_CD_CURRENCY">
+          <ScalarProperty Name="CDCU_SEQUENCE" ColumnName="CDCU_SEQUENCE" />
+          <ScalarProperty Name="CDCU_FK_CHARSET" ColumnName="CDCU_FK_CHARSET" />
+          <ScalarProperty Name="CDCU_CURRENCY_DESC" ColumnName="CDCU_CURRENCY_DESC" />
+          <ScalarProperty Name="CDCU_TTF" ColumnName="CDCU_TTF" />
+          <ScalarProperty Name="CDCU_SYMBOL" ColumnName="CDCU_SYMBOL" />
+          <ScalarProperty Name="CDCU_SYMBOL_TEXT" ColumnName="CDCU_SYMBOL_TEXT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_EXT_CODE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_EXT_CODE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_EXT_CODE">
+          <ScalarProperty Name="CDEC_SEQUENCE" ColumnName="CDEC_SEQUENCE" />
+          <ScalarProperty Name="CDEC_FK_EXT_GROUP" ColumnName="CDEC_FK_EXT_GROUP" />
+          <ScalarProperty Name="CDEC_FK_CAB_CODE" ColumnName="CDEC_FK_CAB_CODE" />
+          <ScalarProperty Name="CDEC_DESC" ColumnName="CDEC_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_EXT_GROUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_EXT_GROUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_EXT_GROUP">
+          <ScalarProperty Name="CDEG_SEQUENCE" ColumnName="CDEG_SEQUENCE" />
+          <ScalarProperty Name="CDEG_FK_EXT_GROUP_TYPE" ColumnName="CDEG_FK_EXT_GROUP_TYPE" />
+          <ScalarProperty Name="CDEG_DESC" ColumnName="CDEG_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_EXT_GROUP_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_EXT_GROUP_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_EXT_GROUP_TYPE">
+          <ScalarProperty Name="CDET_SEQUENCE" ColumnName="CDET_SEQUENCE" />
+          <ScalarProperty Name="CDET_DESC" ColumnName="CDET_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_EXT_PROP_LU">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_EXT_PROP_LU">
+        <MappingFragment StoreEntitySet="F_CAB_CD_EXT_PROP_LU">
+          <ScalarProperty Name="CDEL_SEQUENCE" ColumnName="CDEL_SEQUENCE" />
+          <ScalarProperty Name="CDEL_FK_EXT_PROP_TYPE" ColumnName="CDEL_FK_EXT_PROP_TYPE" />
+          <ScalarProperty Name="CDEL_LOOKUP_VALUE" ColumnName="CDEL_LOOKUP_VALUE" />
+          <ScalarProperty Name="CDEL_SORT_ORDER" ColumnName="CDEL_SORT_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_EXT_PROP_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_EXT_PROP_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_EXT_PROP_TYPE">
+          <ScalarProperty Name="CDEP_SEQUENCE" ColumnName="CDEP_SEQUENCE" />
+          <ScalarProperty Name="CDEP_DESC" ColumnName="CDEP_DESC" />
+          <ScalarProperty Name="CDEP_FREEFIELD_YN" ColumnName="CDEP_FREEFIELD_YN" />
+          <ScalarProperty Name="CDEP_LU_SORT_ALPHA_YN" ColumnName="CDEP_LU_SORT_ALPHA_YN" />
+          <ScalarProperty Name="CDEP_SYSTEM_VALUE" ColumnName="CDEP_SYSTEM_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_GRAS_PROP_GROUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_GRAS_PROP_GROUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_GRAS_PROP_GROUP">
+          <ScalarProperty Name="CDPR_SEQUENCE" ColumnName="CDPR_SEQUENCE" />
+          <ScalarProperty Name="CDPR_DESC" ColumnName="CDPR_DESC" />
+          <ScalarProperty Name="CDPR_ORDER" ColumnName="CDPR_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_GRAS_PROP_LOOKUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_GRAS_PROP_LOOKUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_GRAS_PROP_LOOKUP">
+          <ScalarProperty Name="CDGL_SEQUENCE" ColumnName="CDGL_SEQUENCE" />
+          <ScalarProperty Name="CDGL_FK_CDGP_SEQ" ColumnName="CDGL_FK_CDGP_SEQ" />
+          <ScalarProperty Name="CDGL_LOOKUP_VALUE" ColumnName="CDGL_LOOKUP_VALUE" />
+          <ScalarProperty Name="CDGL_LOOKUP_DESC" ColumnName="CDGL_LOOKUP_DESC" />
+          <ScalarProperty Name="CDGL_ORDER" ColumnName="CDGL_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_GRAS_PROP_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_GRAS_PROP_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_GRAS_PROP_TYPE">
+          <ScalarProperty Name="CDGP_SEQUENCE" ColumnName="CDGP_SEQUENCE" />
+          <ScalarProperty Name="CDGP_DESC" ColumnName="CDGP_DESC" />
+          <ScalarProperty Name="CDGP_FK_CDPR_SEQ" ColumnName="CDGP_FK_CDPR_SEQ" />
+          <ScalarProperty Name="CDGP_FK_VBN_PROP_TYPE" ColumnName="CDGP_FK_VBN_PROP_TYPE" />
+          <ScalarProperty Name="CDGP_SYSTEM_VALUE" ColumnName="CDGP_SYSTEM_VALUE" />
+          <ScalarProperty Name="CDGP_DESC_PREFIX" ColumnName="CDGP_DESC_PREFIX" />
+          <ScalarProperty Name="CDGP_MANDATORY_YN" ColumnName="CDGP_MANDATORY_YN" />
+          <ScalarProperty Name="CDGP_DESC_SUFFIX" ColumnName="CDGP_DESC_SUFFIX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_GRAS_VBN_LK_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_GRAS_VBN_LK_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_CD_GRAS_VBN_LK_MATRIX">
+          <ScalarProperty Name="CVGM_SEQUENCE" ColumnName="CVGM_SEQUENCE" />
+          <ScalarProperty Name="CVGM_FK_CDGL_SEQ" ColumnName="CVGM_FK_CDGL_SEQ" />
+          <ScalarProperty Name="CVGM_FK_VBN_LOOKUP_VALUE" ColumnName="CVGM_FK_VBN_LOOKUP_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_GROUP_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_GROUP_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_GROUP_TYPE">
+          <ScalarProperty Name="CDGT_MODIFED_BY" ColumnName="CDGT_MODIFED_BY" />
+          <ScalarProperty Name="CDGT_MODIFIED_ON" ColumnName="CDGT_MODIFIED_ON" />
+          <ScalarProperty Name="CDGT_EXT_ID" ColumnName="CDGT_EXT_ID" />
+          <ScalarProperty Name="CDGT_DESC" ColumnName="CDGT_DESC" />
+          <ScalarProperty Name="CDGT_FK_MAIN_GROUP" ColumnName="CDGT_FK_MAIN_GROUP" />
+          <ScalarProperty Name="CDGT_SEQUENCE" ColumnName="CDGT_SEQUENCE" />
+          <ScalarProperty Name="CDGT_SORT_ORDER" ColumnName="CDGT_SORT_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_LANGUAGE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_LANGUAGE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_LANGUAGE">
+          <ScalarProperty Name="CDLA_MODIFIED_BY" ColumnName="CDLA_MODIFIED_BY" />
+          <ScalarProperty Name="CDLA_MODIFIED_ON" ColumnName="CDLA_MODIFIED_ON" />
+          <ScalarProperty Name="CDLA_EXT_ID" ColumnName="CDLA_EXT_ID" />
+          <ScalarProperty Name="CDLA_SEQUENCE" ColumnName="CDLA_SEQUENCE" />
+          <ScalarProperty Name="CDLA_FK_CHARSET" ColumnName="CDLA_FK_CHARSET" />
+          <ScalarProperty Name="CDLA_LANGUAGE_DESC" ColumnName="CDLA_LANGUAGE_DESC" />
+          <ScalarProperty Name="CDLA_TTF" ColumnName="CDLA_TTF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_LAYOUT">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_LAYOUT">
+        <MappingFragment StoreEntitySet="F_CAB_CD_LAYOUT">
+          <ScalarProperty Name="CDLO_SEQUENCE" ColumnName="CDLO_SEQUENCE" />
+          <ScalarProperty Name="CDLO_LAYOUT_DESC" ColumnName="CDLO_LAYOUT_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_LAYOUT_PARM">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_LAYOUT_PARM">
+        <MappingFragment StoreEntitySet="F_CAB_CD_LAYOUT_PARM">
+          <ScalarProperty Name="CDLP_SEQUENCE" ColumnName="CDLP_SEQUENCE" />
+          <ScalarProperty Name="CDLP_FK_LAYOUT" ColumnName="CDLP_FK_LAYOUT" />
+          <ScalarProperty Name="CDLP_PARM_DESC" ColumnName="CDLP_PARM_DESC" />
+          <ScalarProperty Name="CDLP_PARM_TYPE" ColumnName="CDLP_PARM_TYPE" />
+          <ScalarProperty Name="CDLP_FK_EXT_PROP_LU" ColumnName="CDLP_FK_EXT_PROP_LU" />
+          <ScalarProperty Name="CDLP_PARM_DATE_FORMAT" ColumnName="CDLP_PARM_DATE_FORMAT" />
+          <ScalarProperty Name="CDLP_MIN_VALUE" ColumnName="CDLP_MIN_VALUE" />
+          <ScalarProperty Name="CDLP_MAX_VALUE" ColumnName="CDLP_MAX_VALUE" />
+          <ScalarProperty Name="CDLP_PARM_REQUIRED_YN" ColumnName="CDLP_PARM_REQUIRED_YN" />
+          <ScalarProperty Name="CDLP_PARM_ORDER" ColumnName="CDLP_PARM_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_LOGIN_GROUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_LOGIN_GROUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_LOGIN_GROUP">
+          <ScalarProperty Name="CDLG_SEQUENCE" ColumnName="CDLG_SEQUENCE" />
+          <ScalarProperty Name="CDLG_LOGIN_GROUP_DESC" ColumnName="CDLG_LOGIN_GROUP_DESC" />
+          <ScalarProperty Name="CDLG_ICON_ID" ColumnName="CDLG_ICON_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_MAIN_GROUP_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_MAIN_GROUP_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_MAIN_GROUP_TYPE">
+          <ScalarProperty Name="CDMG_SEQUENCE" ColumnName="CDMG_SEQUENCE" />
+          <ScalarProperty Name="CDMG_DESC" ColumnName="CDMG_DESC" />
+          <ScalarProperty Name="CDMG_NUM_OF_DAYS_OFFER" ColumnName="CDMG_NUM_OF_DAYS_OFFER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_MENU_ITEM">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_MENU_ITEM">
+        <MappingFragment StoreEntitySet="F_CAB_CD_MENU_ITEM">
+          <ScalarProperty Name="CDMI_SEQUENCE" ColumnName="CDMI_SEQUENCE" />
+          <ScalarProperty Name="CDMI_FK_PARENT_CDMI_SEQ" ColumnName="CDMI_FK_PARENT_CDMI_SEQ" />
+          <ScalarProperty Name="CDMI_DISPLAY_NAME" ColumnName="CDMI_DISPLAY_NAME" />
+          <ScalarProperty Name="CDMI_OMNIS_NAME" ColumnName="CDMI_OMNIS_NAME" />
+          <ScalarProperty Name="CDMI_ICON_ID" ColumnName="CDMI_ICON_ID" />
+          <ScalarProperty Name="CDMI_ORDER" ColumnName="CDMI_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_ORD_DET_STATUS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_ORD_DET_STATUS">
+        <MappingFragment StoreEntitySet="F_CAB_CD_ORD_DET_STATUS">
+          <ScalarProperty Name="CDDS_SEQUENCE" ColumnName="CDDS_SEQUENCE" />
+          <ScalarProperty Name="CDDS_SYS_STATUS" ColumnName="CDDS_SYS_STATUS" />
+          <ScalarProperty Name="CDDS_STATUS_DESC" ColumnName="CDDS_STATUS_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_ORD_HEA_STATUS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_ORD_HEA_STATUS">
+        <MappingFragment StoreEntitySet="F_CAB_CD_ORD_HEA_STATUS">
+          <ScalarProperty Name="CDOS_SEQUENCE" ColumnName="CDOS_SEQUENCE" />
+          <ScalarProperty Name="CDOS_SYS_STATUS" ColumnName="CDOS_SYS_STATUS" />
+          <ScalarProperty Name="CDOS_STATUS_DESC" ColumnName="CDOS_STATUS_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_PAYMENT_TYPES">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_PAYMENT_TYPES">
+        <MappingFragment StoreEntitySet="F_CAB_CD_PAYMENT_TYPES">
+          <ScalarProperty Name="CDPM_SEQUENCE" ColumnName="CDPM_SEQUENCE" />
+          <ScalarProperty Name="CDPM_PAYMENT_CODE" ColumnName="CDPM_PAYMENT_CODE" />
+          <ScalarProperty Name="CDPM_PAYMENT_DESCRIPTION" ColumnName="CDPM_PAYMENT_DESCRIPTION" />
+          <ScalarProperty Name="CDPM_CREATED_ON" ColumnName="CDPM_CREATED_ON" />
+          <ScalarProperty Name="CDPM_CREATED_BY" ColumnName="CDPM_CREATED_BY" />
+          <ScalarProperty Name="CDPM_MODIFIED_ON" ColumnName="CDPM_MODIFIED_ON" />
+          <ScalarProperty Name="CDPM_MODIFIED_BY" ColumnName="CDPM_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_PD_GROUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_PD_GROUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_PD_GROUP">
+          <ScalarProperty Name="CDPD_SEQUENCE" ColumnName="CDPD_SEQUENCE" />
+          <ScalarProperty Name="CDPD_FK_PD_TYPE" ColumnName="CDPD_FK_PD_TYPE" />
+          <ScalarProperty Name="CDPD_DESC" ColumnName="CDPD_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_PD_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_PD_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_PD_TYPE">
+          <ScalarProperty Name="CDPY_SEQUENCE" ColumnName="CDPY_SEQUENCE" />
+          <ScalarProperty Name="CDPY_DESC" ColumnName="CDPY_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_PROFILE_DETAIL">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_PROFILE_DETAIL">
+        <MappingFragment StoreEntitySet="F_CAB_CD_PROFILE_DETAIL">
+          <ScalarProperty Name="CDPD_SEQUENCE" ColumnName="CDPD_SEQUENCE" />
+          <ScalarProperty Name="CDPD_FK_PROFILE_HEADER" ColumnName="CDPD_FK_PROFILE_HEADER" />
+          <ScalarProperty Name="CDPD_FK_PROP_TYPE" ColumnName="CDPD_FK_PROP_TYPE" />
+          <ScalarProperty Name="CDPD_ORDER" ColumnName="CDPD_ORDER" />
+          <ScalarProperty Name="CDPD_DEFAULT_VALUE" ColumnName="CDPD_DEFAULT_VALUE" />
+          <ScalarProperty Name="CDPD_REQUIRED_YN" ColumnName="CDPD_REQUIRED_YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_PROFILE_HEADER">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_PROFILE_HEADER">
+        <MappingFragment StoreEntitySet="F_CAB_CD_PROFILE_HEADER">
+          <ScalarProperty Name="CDPH_SEQUENCE" ColumnName="CDPH_SEQUENCE" />
+          <ScalarProperty Name="CDPH_DESC" ColumnName="CDPH_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_RELATION_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_RELATION_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_RELATION_TYPE">
+          <ScalarProperty Name="CDRT_SEQUENCE" ColumnName="CDRT_SEQUENCE" />
+          <ScalarProperty Name="CDRT_DESC" ColumnName="CDRT_DESC" />
+          <ScalarProperty Name="CDRT_SYSTEM_VALUE" ColumnName="CDRT_SYSTEM_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_VBN_CODE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_VBN_CODE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_VBN_CODE">
+          <ScalarProperty Name="VBNC_EXPIRED_ON" ColumnName="VBNC_EXPIRED_ON" />
+          <ScalarProperty Name="VBNC_ALLOW_DIFFERENT_CAB_DESCRIPTION_YN" ColumnName="VBNC_ALLOW_DIFFERENT_CAB_DESCRIPTION_YN" />
+          <ScalarProperty Name="VBNC_SEQUENCE" ColumnName="VBNC_SEQUENCE" />
+          <ScalarProperty Name="VBNC_VBN_CODE" ColumnName="VBNC_VBN_CODE" />
+          <ScalarProperty Name="VBNC_DESC" ColumnName="VBNC_DESC" />
+          <ScalarProperty Name="VBNC_DESC_UPPER" ColumnName="VBNC_DESC_UPPER" />
+          <ScalarProperty Name="VBNC_FK_VBN_GROUP" ColumnName="VBNC_FK_VBN_GROUP" />
+          <ScalarProperty Name="VBNC_VBN_PICTURE" ColumnName="VBNC_VBN_PICTURE" />
+          <ScalarProperty Name="VBNC_CREATED_ON" ColumnName="VBNC_CREATED_ON" />
+          <ScalarProperty Name="VBNC_CREATED_BY" ColumnName="VBNC_CREATED_BY" />
+          <ScalarProperty Name="VBNC_MODIFIED_ON" ColumnName="VBNC_MODIFIED_ON" />
+          <ScalarProperty Name="VBNC_MODIFIED_BY" ColumnName="VBNC_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_VBN_CODE_GROUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_VBN_CODE_GROUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_VBN_CODE_GROUP">
+          <ScalarProperty Name="CDVG_SEQUENCE" ColumnName="CDVG_SEQUENCE" />
+          <ScalarProperty Name="CDVG_CODE" ColumnName="CDVG_CODE" />
+          <ScalarProperty Name="CDVG_DESC" ColumnName="CDVG_DESC" />
+          <ScalarProperty Name="CDVG_MAINGROUP" ColumnName="CDVG_MAINGROUP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_VBN_PROP_GROUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_VBN_PROP_GROUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_VBN_PROP_GROUP">
+          <ScalarProperty Name="CDPG_SEQUENCE" ColumnName="CDPG_SEQUENCE" />
+          <ScalarProperty Name="CDPG_DESC" ColumnName="CDPG_DESC" />
+          <ScalarProperty Name="CDPG_ORDER" ColumnName="CDPG_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_VBN_PROP_LOOKUP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_VBN_PROP_LOOKUP">
+        <MappingFragment StoreEntitySet="F_CAB_CD_VBN_PROP_LOOKUP">
+          <ScalarProperty Name="CDVL_SEQUENCE" ColumnName="CDVL_SEQUENCE" />
+          <ScalarProperty Name="CDVL_FK_VBN_PROP_TYPE" ColumnName="CDVL_FK_VBN_PROP_TYPE" />
+          <ScalarProperty Name="CDVL_LOOKUP_VALUE" ColumnName="CDVL_LOOKUP_VALUE" />
+          <ScalarProperty Name="CDVL_LOOKUP_DESC" ColumnName="CDVL_LOOKUP_DESC" />
+          <ScalarProperty Name="CDVL_ORDER" ColumnName="CDVL_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_VBN_PROP_PROFILE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_VBN_PROP_PROFILE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_VBN_PROP_PROFILE">
+          <ScalarProperty Name="CVPP_SEQUENCE" ColumnName="CVPP_SEQUENCE" />
+          <ScalarProperty Name="CVPP_FK_VBN_GROUP" ColumnName="CVPP_FK_VBN_GROUP" />
+          <ScalarProperty Name="CVPP_FK_PROP_TYPE" ColumnName="CVPP_FK_PROP_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_VBN_PROP_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_VBN_PROP_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_CD_VBN_PROP_TYPE">
+          <ScalarProperty Name="CDVP_SEQUENCE" ColumnName="CDVP_SEQUENCE" />
+          <ScalarProperty Name="CDVP_PROP_DESC" ColumnName="CDVP_PROP_DESC" />
+          <ScalarProperty Name="CDVP_VBN_PROP_CODE" ColumnName="CDVP_VBN_PROP_CODE" />
+          <ScalarProperty Name="CDVP_FK_VBN_PROP_GROUP" ColumnName="CDVP_FK_VBN_PROP_GROUP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CHARSET">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CHARSET">
+        <MappingFragment StoreEntitySet="F_CAB_CHARSET">
+          <ScalarProperty Name="CHAR_SEQUENCE" ColumnName="CHAR_SEQUENCE" />
+          <ScalarProperty Name="CHAR_FK_CHARSET" ColumnName="CHAR_FK_CHARSET" />
+          <ScalarProperty Name="CHAR_UNICODE_DEC" ColumnName="CHAR_UNICODE_DEC" />
+          <ScalarProperty Name="CHAR_ASCIICODE" ColumnName="CHAR_ASCIICODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_COMMUNICATE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_COMMUNICATE">
+        <MappingFragment StoreEntitySet="F_CAB_COMMUNICATE">
+          <ScalarProperty Name="COMM_SEQUENCE" ColumnName="COMM_SEQUENCE" />
+          <ScalarProperty Name="COMM_HANDOVER" ColumnName="COMM_HANDOVER" />
+          <ScalarProperty Name="COMM_FK_LOGIN" ColumnName="COMM_FK_LOGIN" />
+          <ScalarProperty Name="COMM_OPEN_FORM" ColumnName="COMM_OPEN_FORM" />
+          <ScalarProperty Name="COMM_PAR_SEQUENCE" ColumnName="COMM_PAR_SEQUENCE" />
+          <ScalarProperty Name="COMM_EXTRAINFO" ColumnName="COMM_EXTRAINFO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_COUNTERS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_COUNTERS">
+        <MappingFragment StoreEntitySet="F_CAB_COUNTERS">
+          <ScalarProperty Name="COUN_SEQUENCE" ColumnName="COUN_SEQUENCE" />
+          <ScalarProperty Name="COUN_FK_ORGA" ColumnName="COUN_FK_ORGA" />
+          <ScalarProperty Name="COUN_COUNTER_TYPE" ColumnName="COUN_COUNTER_TYPE" />
+          <ScalarProperty Name="COUN_COUNTER_VALUE" ColumnName="COUN_COUNTER_VALUE" />
+          <ScalarProperty Name="COUN_COUNTER_FORMAT" ColumnName="COUN_COUNTER_FORMAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CUSTOMER">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CUSTOMER">
+        <MappingFragment StoreEntitySet="F_CAB_CUSTOMER">
+          <ScalarProperty Name="CUST_SEQUENCE" ColumnName="CUST_SEQUENCE" />
+          <ScalarProperty Name="CUST_FK_COUNTRY" ColumnName="CUST_FK_COUNTRY" />
+          <ScalarProperty Name="CUST_FK_CURRENCY" ColumnName="CUST_FK_CURRENCY" />
+          <ScalarProperty Name="CUST_FK_LANGUAGE" ColumnName="CUST_FK_LANGUAGE" />
+          <ScalarProperty Name="CUST_FK_PARENT_CUST" ColumnName="CUST_FK_PARENT_CUST" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CUSTOMER_EXT_CODES_MTRX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CUSTOMER_EXT_CODES_MTRX">
+        <MappingFragment StoreEntitySet="F_CAB_CUSTOMER_EXT_CODES_MTRX">
+          <ScalarProperty Name="CUEC_SEQUENCE" ColumnName="CUEC_SEQUENCE" />
+          <ScalarProperty Name="CUEC_FK_CUSTOMER" ColumnName="CUEC_FK_CUSTOMER" />
+          <ScalarProperty Name="CUEC_FK_EXT_CODE" ColumnName="CUEC_FK_EXT_CODE" />
+          <ScalarProperty Name="CUEC_START_DATE" ColumnName="CUEC_START_DATE" />
+          <ScalarProperty Name="CUEC_END_DATE" ColumnName="CUEC_END_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CUSTOMER_LAYOUT_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CUSTOMER_LAYOUT_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_CUSTOMER_LAYOUT_MATRIX">
+          <ScalarProperty Name="CULA_SEQUENCE" ColumnName="CULA_SEQUENCE" />
+          <ScalarProperty Name="CULA_FK_CUSTOMER" ColumnName="CULA_FK_CUSTOMER" />
+          <ScalarProperty Name="CULA_FK_LAYOUT" ColumnName="CULA_FK_LAYOUT" />
+          <ScalarProperty Name="CULA_START_DATE" ColumnName="CULA_START_DATE" />
+          <ScalarProperty Name="CULA_END_DATE" ColumnName="CULA_END_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_EXT_CODE_PROPERTY">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_EXT_CODE_PROPERTY">
+        <MappingFragment StoreEntitySet="F_CAB_EXT_CODE_PROPERTY">
+          <ScalarProperty Name="EXCP_SEQUENCE" ColumnName="EXCP_SEQUENCE" />
+          <ScalarProperty Name="EXCP_FK_EXT_CODE" ColumnName="EXCP_FK_EXT_CODE" />
+          <ScalarProperty Name="EXCP_FK_EXT_PROP_TYPE" ColumnName="EXCP_FK_EXT_PROP_TYPE" />
+          <ScalarProperty Name="EXCP_FK_EXT_PROP_LU" ColumnName="EXCP_FK_EXT_PROP_LU" />
+          <ScalarProperty Name="EXCP_EXT_PROP_CONTENT" ColumnName="EXCP_EXT_PROP_CONTENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_EXT_CODE_TRANS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_EXT_CODE_TRANS">
+        <MappingFragment StoreEntitySet="F_CAB_EXT_CODE_TRANS">
+          <ScalarProperty Name="EXCT_SEQUENCE" ColumnName="EXCT_SEQUENCE" />
+          <ScalarProperty Name="EXCT_FK_EXT_CODE" ColumnName="EXCT_FK_EXT_CODE" />
+          <ScalarProperty Name="EXCT_FK_LANGUAGE" ColumnName="EXCT_FK_LANGUAGE" />
+          <ScalarProperty Name="EXCT_TRANS_EXT_DESC" ColumnName="EXCT_TRANS_EXT_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_EXT_GROUP_PROP_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_EXT_GROUP_PROP_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_EXT_GROUP_PROP_TYPE">
+          <ScalarProperty Name="EGPT_SEQUENCE" ColumnName="EGPT_SEQUENCE" />
+          <ScalarProperty Name="EGPT_FK_EXT_GROUP" ColumnName="EGPT_FK_EXT_GROUP" />
+          <ScalarProperty Name="EGPT_FK_EXT_PROP_TYPE" ColumnName="EGPT_FK_EXT_PROP_TYPE" />
+          <ScalarProperty Name="EGPT_ORDER" ColumnName="EGPT_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_EXT_PROP_LU_TRANS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_EXT_PROP_LU_TRANS">
+        <MappingFragment StoreEntitySet="F_CAB_EXT_PROP_LU_TRANS">
+          <ScalarProperty Name="EPLT_SEQUENCE" ColumnName="EPLT_SEQUENCE" />
+          <ScalarProperty Name="EPLT_FK_EXT_PROP_LU" ColumnName="EPLT_FK_EXT_PROP_LU" />
+          <ScalarProperty Name="EPLT_FK_LANGUAGE" ColumnName="EPLT_FK_LANGUAGE" />
+          <ScalarProperty Name="EPLT_TRANS_LOOKUP_VALUE" ColumnName="EPLT_TRANS_LOOKUP_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_FUNCTION">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_FUNCTION">
+        <MappingFragment StoreEntitySet="F_CAB_FUNCTION">
+          <ScalarProperty Name="FUNC_SEQUENCE" ColumnName="FUNC_SEQUENCE" />
+          <ScalarProperty Name="FUNC_CODE" ColumnName="FUNC_CODE" />
+          <ScalarProperty Name="FUNC_DESCRIPTION" ColumnName="FUNC_DESCRIPTION" />
+          <ScalarProperty Name="FUNC_REMARK" ColumnName="FUNC_REMARK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_FUNCTION_ROLE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_FUNCTION_ROLE">
+        <MappingFragment StoreEntitySet="F_CAB_FUNCTION_ROLE">
+          <ScalarProperty Name="FURE_SEQUENCE" ColumnName="FURE_SEQUENCE" />
+          <ScalarProperty Name="FURE_FK_FUNC" ColumnName="FURE_FK_FUNC" />
+          <ScalarProperty Name="FURE_FK_ROLE" ColumnName="FURE_FK_ROLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_GENERAL_RELATIONS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_GENERAL_RELATIONS">
+        <MappingFragment StoreEntitySet="F_CAB_GENERAL_RELATIONS">
+          <ScalarProperty Name="GREL_SEQUENCE" ColumnName="GREL_SEQUENCE" />
+          <ScalarProperty Name="GREL_CODE" ColumnName="GREL_CODE" />
+          <ScalarProperty Name="GREL_NAME" ColumnName="GREL_NAME" />
+          <ScalarProperty Name="GREL_EAN_CODE" ColumnName="GREL_EAN_CODE" />
+          <ScalarProperty Name="GREL_EMAIL" ColumnName="GREL_EMAIL" />
+          <ScalarProperty Name="GREL_FK_PICT_SEQ" ColumnName="GREL_FK_PICT_SEQ" />
+          <ScalarProperty Name="GREL_PHONE_NO" ColumnName="GREL_PHONE_NO" />
+          <ScalarProperty Name="GREL_TYPE" ColumnName="GREL_TYPE" />
+          <ScalarProperty Name="GREL_CONTACT_PERSON" ColumnName="GREL_CONTACT_PERSON" />
+          <ScalarProperty Name="GREL_EXT_REF_ID" ColumnName="GREL_EXT_REF_ID" />
+          <ScalarProperty Name="GREL_WEBSITE_URL" ColumnName="GREL_WEBSITE_URL" />
+          <ScalarProperty Name="GREL_CREATED_ON" ColumnName="GREL_CREATED_ON" />
+          <ScalarProperty Name="GREL_CREATED_BY" ColumnName="GREL_CREATED_BY" />
+          <ScalarProperty Name="GREL_MODIFIED_ON" ColumnName="GREL_MODIFIED_ON" />
+          <ScalarProperty Name="GREL_MODIFIED_BY" ColumnName="GREL_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_GRAS_DETAIL">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_GRAS_DETAIL">
+        <MappingFragment StoreEntitySet="F_CAB_GRAS_DETAIL">
+          <ScalarProperty Name="CAGD_SEQUENCE" ColumnName="CAGD_SEQUENCE" />
+          <ScalarProperty Name="CAGD_FK_GRAS_SEQ" ColumnName="CAGD_FK_GRAS_SEQ" />
+          <ScalarProperty Name="CAGD_FK_CDGP_SEQ" ColumnName="CAGD_FK_CDGP_SEQ" />
+          <ScalarProperty Name="CAGD_VALUE" ColumnName="CAGD_VALUE" />
+          <ScalarProperty Name="CAGD_VALUE_DESC" ColumnName="CAGD_VALUE_DESC" />
+          <ScalarProperty Name="CAGD_VALUE_DESC_UPPER" ColumnName="CAGD_VALUE_DESC_UPPER" />
+          <ScalarProperty Name="CAGD_ORDER" ColumnName="CAGD_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_GROUP_PROF_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_GROUP_PROF_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_GROUP_PROF_MATRIX">
+          <ScalarProperty Name="GPMA_SEQUENCE" ColumnName="GPMA_SEQUENCE" />
+          <ScalarProperty Name="GPMA_FK_CAB_GROUP_TYPE" ColumnName="GPMA_FK_CAB_GROUP_TYPE" />
+          <ScalarProperty Name="GPMA_FK_PROFILE_HEADER" ColumnName="GPMA_FK_PROFILE_HEADER" />
+          <ScalarProperty Name="GPMA_PRIORITY" ColumnName="GPMA_PRIORITY" />
+          <ScalarProperty Name="GMPA_DEFAULT_VALUE" ColumnName="GMPA_DEFAULT_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_GROWER">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_GROWER">
+        <MappingFragment StoreEntitySet="F_CAB_GROWER">
+          <ScalarProperty Name="GROW_SEQUENCE" ColumnName="GROW_SEQUENCE" />
+          <ScalarProperty Name="GROW_FK_ORGA" ColumnName="GROW_FK_ORGA" />
+          <ScalarProperty Name="GROW_NUM_OF_M2" ColumnName="GROW_NUM_OF_M2" />
+          <ScalarProperty Name="GROW_FK_BULK_CASK" ColumnName="GROW_FK_BULK_CASK" />
+          <ScalarProperty Name="GROW_MOBILE_NO" ColumnName="GROW_MOBILE_NO" />
+          <ScalarProperty Name="GROW_MPS" ColumnName="GROW_MPS" />
+          <ScalarProperty Name="GROW_ISO_YN" ColumnName="GROW_ISO_YN" />
+          <ScalarProperty Name="GROW_FLORIMARK_YN" ColumnName="GROW_FLORIMARK_YN" />
+          <ScalarProperty Name="GROW_MPS_GAP" ColumnName="GROW_MPS_GAP" />
+          <ScalarProperty Name="GROW_CREATED_ON" ColumnName="GROW_CREATED_ON" />
+          <ScalarProperty Name="GROW_CREATED_BY" ColumnName="GROW_CREATED_BY" />
+          <ScalarProperty Name="GROW_MODIFIED_ON" ColumnName="GROW_MODIFIED_ON" />
+          <ScalarProperty Name="GROW_MODIFIED_BY" ColumnName="GROW_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_GROWER_ASSORTIMENT">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_GROWER_ASSORTIMENT">
+        <MappingFragment StoreEntitySet="F_CAB_GROWER_ASSORTIMENT">
+          <ScalarProperty Name="GRAS_MODIFIED_BY" ColumnName="GRAS_MODIFIED_BY" />
+          <ScalarProperty Name="GRAS_MODIFIED_ON" ColumnName="GRAS_MODIFIED_ON" />
+          <ScalarProperty Name="GRAS_CREATED_BY" ColumnName="GRAS_CREATED_BY" />
+          <ScalarProperty Name="GRAS_CREATED_ON" ColumnName="GRAS_CREATED_ON" />
+          <ScalarProperty Name="GRAS_GROWER_ID" ColumnName="GRAS_GROWER_ID" />
+          <ScalarProperty Name="GRAS_SEQUENCE" ColumnName="GRAS_SEQUENCE" />
+          <ScalarProperty Name="GRAS_FK_GROWER" ColumnName="GRAS_FK_GROWER" />
+          <ScalarProperty Name="GRAS_FK_CAB_CODE" ColumnName="GRAS_FK_CAB_CODE" />
+          <ScalarProperty Name="GRAS_START_DATE" ColumnName="GRAS_START_DATE" />
+          <ScalarProperty Name="GRAS_END_DATE" ColumnName="GRAS_END_DATE" />
+          <ScalarProperty Name="GRAS_NUM_OF_M2" ColumnName="GRAS_NUM_OF_M2" />
+          <ScalarProperty Name="GRAS_NUM_OF_ITEMS" ColumnName="GRAS_NUM_OF_ITEMS" />
+          <ScalarProperty Name="GRAS_SELECTED_YN" ColumnName="GRAS_SELECTED_YN" />
+          <ScalarProperty Name="GRAS_DELETED_YN" ColumnName="GRAS_DELETED_YN" />
+          <ScalarProperty Name="GRAS_PICTURE" ColumnName="GRAS_PICTURE" />
+          <ScalarProperty Name="GRAS_FK_PICTURE" ColumnName="GRAS_FK_PICTURE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_GROWER_AUCTION_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_GROWER_AUCTION_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_GROWER_AUCTION_MATRIX">
+          <ScalarProperty Name="GAMA_SEQUENCE" ColumnName="GAMA_SEQUENCE" />
+          <ScalarProperty Name="GAMA_FK_AUCTION" ColumnName="GAMA_FK_AUCTION" />
+          <ScalarProperty Name="GAMA_FK_GROWER" ColumnName="GAMA_FK_GROWER" />
+          <ScalarProperty Name="GAMA_GROWER_NUMBER" ColumnName="GAMA_GROWER_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_GROWER_BUYER_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_GROWER_BUYER_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_GROWER_BUYER_MATRIX">
+          <ScalarProperty Name="GAMA_SEQUENCE" ColumnName="GAMA_SEQUENCE" />
+          <ScalarProperty Name="GAMA_FK_BUYER" ColumnName="GAMA_FK_BUYER" />
+          <ScalarProperty Name="GAMA_FK_GROWER" ColumnName="GAMA_FK_GROWER" />
+          <ScalarProperty Name="GAMA_LAST_ORDER_DATE" ColumnName="GAMA_LAST_ORDER_DATE" />
+          <ScalarProperty Name="GAMA_BLOCKED_YN" ColumnName="GAMA_BLOCKED_YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_GROWER_CASK_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_GROWER_CASK_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_GROWER_CASK_MATRIX">
+          <ScalarProperty Name="CGCM_NUM_ITEMS_BUNCH" ColumnName="CGCM_NUM_ITEMS_BUNCH" />
+          <ScalarProperty Name="CGCM_SEQUENCE" ColumnName="CGCM_SEQUENCE" />
+          <ScalarProperty Name="CGCM_SHOW_CASK" ColumnName="CGCM_SHOW_CASK" />
+          <ScalarProperty Name="CGCM_FK_GROWER_ASSORTIMENT" ColumnName="CGCM_FK_GROWER_ASSORTIMENT" />
+          <ScalarProperty Name="CGCM_FK_CACA" ColumnName="CGCM_FK_CACA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_GROWER_CASK_PICTURE_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_GROWER_CASK_PICTURE_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_GROWER_CASK_PICTURE_MATRIX">
+          <ScalarProperty Name="GCPM_SEQUENCE" ColumnName="GCPM_SEQUENCE" />
+          <ScalarProperty Name="GCPM_FK_GRAS" ColumnName="GCPM_FK_GRAS" />
+          <ScalarProperty Name="GCPM_FK_PICT" ColumnName="GCPM_FK_PICT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_HANDOVER">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_HANDOVER">
+        <MappingFragment StoreEntitySet="F_CAB_HANDOVER">
+          <ScalarProperty Name="HAND_SEQUENCE" ColumnName="HAND_SEQUENCE" />
+          <ScalarProperty Name="HAND_DATETIME" ColumnName="HAND_DATETIME" />
+          <ScalarProperty Name="HAND_FK_LOGIN" ColumnName="HAND_FK_LOGIN" />
+          <ScalarProperty Name="HAND_OPEN_FORM" ColumnName="HAND_OPEN_FORM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_HANDSHAKE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_HANDSHAKE">
+        <MappingFragment StoreEntitySet="F_CAB_HANDSHAKE">
+          <ScalarProperty Name="HAND_SEQUENCE" ColumnName="HAND_SEQUENCE" />
+          <ScalarProperty Name="HAND_FK_ORGA_SEQ_GROWER" ColumnName="HAND_FK_ORGA_SEQ_GROWER" />
+          <ScalarProperty Name="HAND_FK_ORGA_SEQ_BUYER" ColumnName="HAND_FK_ORGA_SEQ_BUYER" />
+          <ScalarProperty Name="HAND_FK_HATY_SEQ" ColumnName="HAND_FK_HATY_SEQ" />
+          <ScalarProperty Name="HAND_REQUEST_DATE" ColumnName="HAND_REQUEST_DATE" />
+          <ScalarProperty Name="HAND_ACCEPT_DATE" ColumnName="HAND_ACCEPT_DATE" />
+          <ScalarProperty Name="HAND_APPROVE_DATE" ColumnName="HAND_APPROVE_DATE" />
+          <ScalarProperty Name="HAND_BLOCKED_YN" ColumnName="HAND_BLOCKED_YN" />
+          <ScalarProperty Name="HAND_REQUEST_MAIL" ColumnName="HAND_REQUEST_MAIL" />
+          <ScalarProperty Name="HAND_REQUEST_REMARK" ColumnName="HAND_REQUEST_REMARK" />
+          <ScalarProperty Name="HAND_CREATED_ON" ColumnName="HAND_CREATED_ON" />
+          <ScalarProperty Name="HAND_CREATED_BY" ColumnName="HAND_CREATED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_HANDSHAKE_OPTION_FIELDS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_HANDSHAKE_OPTION_FIELDS">
+        <MappingFragment StoreEntitySet="F_CAB_HANDSHAKE_OPTION_FIELDS">
+          <ScalarProperty Name="HNOF_SEQUENCE" ColumnName="HNOF_SEQUENCE" />
+          <ScalarProperty Name="HNOF_FK_HATY_SEQ" ColumnName="HNOF_FK_HATY_SEQ" />
+          <ScalarProperty Name="HNOF_FIELD" ColumnName="HNOF_FIELD" />
+          <ScalarProperty Name="HNOF_AUTH_LEVEL_GROWER" ColumnName="HNOF_AUTH_LEVEL_GROWER" />
+          <ScalarProperty Name="HNOF_AUTH_LEVEL_BUYER" ColumnName="HNOF_AUTH_LEVEL_BUYER" />
+          <ScalarProperty Name="HNOF_CREATED_ON" ColumnName="HNOF_CREATED_ON" />
+          <ScalarProperty Name="HNOF_CREATED_BY" ColumnName="HNOF_CREATED_BY" />
+          <ScalarProperty Name="HNOF_MODIFIED_ON" ColumnName="HNOF_MODIFIED_ON" />
+          <ScalarProperty Name="HNOF_MODIFIED_BY" ColumnName="HNOF_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_HANDSHAKE_OPTIONS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_HANDSHAKE_OPTIONS">
+        <MappingFragment StoreEntitySet="F_CAB_HANDSHAKE_OPTIONS">
+          <ScalarProperty Name="HNDO_RECV_OFFER_MAIL_YN" ColumnName="HNDO_RECV_OFFER_MAIL_YN" />
+          <ScalarProperty Name="HNDO_SEND_CONFIRM_MAIL_YN" ColumnName="HNDO_SEND_CONFIRM_MAIL_YN" />
+          <ScalarProperty Name="HNDO_FK_ORGA_SEQ" ColumnName="HNDO_FK_ORGA_SEQ" />
+          <ScalarProperty Name="HNDO_FK_DMHD_SEQ" ColumnName="HNDO_FK_DMHD_SEQ" />
+          <ScalarProperty Name="HNDO_SEQUENCE" ColumnName="HNDO_SEQUENCE" />
+          <ScalarProperty Name="HNDO_FK_HAND_SEQ" ColumnName="HNDO_FK_HAND_SEQ" />
+          <ScalarProperty Name="HNDO_FK_ADDR_SEQ" ColumnName="HNDO_FK_ADDR_SEQ" />
+          <ScalarProperty Name="HNDO_FK_CDPM_SEQ" ColumnName="HNDO_FK_CDPM_SEQ" />
+          <ScalarProperty Name="HNDO_AUTO_CONFIRM_YN" ColumnName="HNDO_AUTO_CONFIRM_YN" />
+          <ScalarProperty Name="HNDO_AUTO_EKT_YN" ColumnName="HNDO_AUTO_EKT_YN" />
+          <ScalarProperty Name="HNDO_AUTO_KWB_YN" ColumnName="HNDO_AUTO_KWB_YN" />
+          <ScalarProperty Name="HNDO_AUTO_PUBLISH_STOCK_YN" ColumnName="HNDO_AUTO_PUBLISH_STOCK_YN" />
+          <ScalarProperty Name="HNDO_AUTO_PUBLISH_OFFER_YN" ColumnName="HNDO_AUTO_PUBLISH_OFFER_YN" />
+          <ScalarProperty Name="HNDO_LATEST_DELIVERY_TIME" ColumnName="HNDO_LATEST_DELIVERY_TIME" />
+          <ScalarProperty Name="HNDO_DELIVERY_TYPE" ColumnName="HNDO_DELIVERY_TYPE" />
+          <ScalarProperty Name="HNDO_DELIVERY_STOCK_ALL_WORKDAYS_YN" ColumnName="HNDO_DELIVERY_STOCK_ALL_WORKDAYS_YN" />
+          <ScalarProperty Name="HNDO_DELIVERY_OFFER_ALL_WORKDAYS_YN" ColumnName="HNDO_DELIVERY_OFFER_ALL_WORKDAYS_YN" />
+          <ScalarProperty Name="HNDO_CREATED_ON" ColumnName="HNDO_CREATED_ON" />
+          <ScalarProperty Name="HNDO_CREATED_BY" ColumnName="HNDO_CREATED_BY" />
+          <ScalarProperty Name="HNDO_MODIFIED_ON" ColumnName="HNDO_MODIFIED_ON" />
+          <ScalarProperty Name="HNDO_MODIFIED_BY" ColumnName="HNDO_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_HANDSHAKE_TYPE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_HANDSHAKE_TYPE">
+        <MappingFragment StoreEntitySet="F_CAB_HANDSHAKE_TYPE">
+          <ScalarProperty Name="HATY_SEQUENCE" ColumnName="HATY_SEQUENCE" />
+          <ScalarProperty Name="HATY_CODE" ColumnName="HATY_CODE" />
+          <ScalarProperty Name="HATY_DESCRIPTION" ColumnName="HATY_DESCRIPTION" />
+          <ScalarProperty Name="HATY_REMARK" ColumnName="HATY_REMARK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_HASH_TRACK">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_HASH_TRACK">
+        <MappingFragment StoreEntitySet="F_CAB_HASH_TRACK">
+          <ScalarProperty Name="HHTK_SEQUENCE" ColumnName="HHTK_SEQUENCE" />
+          <ScalarProperty Name="HHTK_TYPE" ColumnName="HHTK_TYPE" />
+          <ScalarProperty Name="HHTK_FK_SEQUENCE" ColumnName="HHTK_FK_SEQUENCE" />
+          <ScalarProperty Name="HHTK_HASH" ColumnName="HHTK_HASH" />
+          <ScalarProperty Name="HHTK_CREATED" ColumnName="HHTK_CREATED" />
+          <ScalarProperty Name="HHTK_CHANGED" ColumnName="HHTK_CHANGED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_LABELDATA">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_LABELDATA">
+        <MappingFragment StoreEntitySet="F_CAB_LABELDATA">
+          <ScalarProperty Name="LADA_SEQUENCE" ColumnName="LADA_SEQUENCE" />
+          <ScalarProperty Name="LADA_COMM_NAME" ColumnName="LADA_COMM_NAME" />
+          <ScalarProperty Name="LADA_BOTA_NAME" ColumnName="LADA_BOTA_NAME" />
+          <ScalarProperty Name="LADA_WEEKNUM" ColumnName="LADA_WEEKNUM" />
+          <ScalarProperty Name="LADA_POTSIZE" ColumnName="LADA_POTSIZE" />
+          <ScalarProperty Name="LADA_COUNTRY_CODE" ColumnName="LADA_COUNTRY_CODE" />
+          <ScalarProperty Name="LADA_COUNTRY_ORG" ColumnName="LADA_COUNTRY_ORG" />
+          <ScalarProperty Name="LADA_PLACEMENT" ColumnName="LADA_PLACEMENT" />
+          <ScalarProperty Name="LADA_TEMPERATURE" ColumnName="LADA_TEMPERATURE" />
+          <ScalarProperty Name="LADA_WATER" ColumnName="LADA_WATER" />
+          <ScalarProperty Name="LADA_FERTILISE" ColumnName="LADA_FERTILISE" />
+          <ScalarProperty Name="LADA_MPS" ColumnName="LADA_MPS" />
+          <ScalarProperty Name="LADA_PRICE" ColumnName="LADA_PRICE" />
+          <ScalarProperty Name="LADA_CURRENCY" ColumnName="LADA_CURRENCY" />
+          <ScalarProperty Name="LADA_ARTNUMBER" ColumnName="LADA_ARTNUMBER" />
+          <ScalarProperty Name="LADA_SUPPLIER" ColumnName="LADA_SUPPLIER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_LOG">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_LOG">
+        <MappingFragment StoreEntitySet="F_CAB_LOG">
+          <ScalarProperty Name="CALO_SEQUENCE" ColumnName="CALO_SEQUENCE" />
+          <ScalarProperty Name="CALO_FK_LOGIN" ColumnName="CALO_FK_LOGIN" />
+          <ScalarProperty Name="CALO_ACTION" ColumnName="CALO_ACTION" />
+          <ScalarProperty Name="CALO_VALUE" ColumnName="CALO_VALUE" />
+          <ScalarProperty Name="CALO_CREATED_ON" ColumnName="CALO_CREATED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_LOGIN">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_LOGIN">
+        <MappingFragment StoreEntitySet="F_CAB_LOGIN">
+          <ScalarProperty Name="LOGI_REMEMBER" ColumnName="LOGI_REMEMBER" />
+          <ScalarProperty Name="LOGI_LAST_LOGIN" ColumnName="LOGI_LAST_LOGIN" />
+          <ScalarProperty Name="LOGI_SEQUENCE" ColumnName="LOGI_SEQUENCE" />
+          <ScalarProperty Name="LOGI_USER_NAME" ColumnName="LOGI_USER_NAME" />
+          <ScalarProperty Name="LOGI_PASSWORD" ColumnName="LOGI_PASSWORD" />
+          <ScalarProperty Name="LOGI_FK_PERSON" ColumnName="LOGI_FK_PERSON" />
+          <ScalarProperty Name="LOGI_FK_LOGIN_GROUP" ColumnName="LOGI_FK_LOGIN_GROUP" />
+          <ScalarProperty Name="LOGI_BLOCKED_YN" ColumnName="LOGI_BLOCKED_YN" />
+          <ScalarProperty Name="LOGI_PASS" ColumnName="LOGI_PASS" />
+          <ScalarProperty Name="LOGI_FK_CDLA_SEQ" ColumnName="LOGI_FK_CDLA_SEQ" />
+          <ScalarProperty Name="LOGI_CREATED_ON" ColumnName="LOGI_CREATED_ON" />
+          <ScalarProperty Name="LOGI_CREATED_BY" ColumnName="LOGI_CREATED_BY" />
+          <ScalarProperty Name="LOGI_MODIFIED_ON" ColumnName="LOGI_MODIFIED_ON" />
+          <ScalarProperty Name="LOGI_MODIFIED_BY" ColumnName="LOGI_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_LOGIN_MENU_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_LOGIN_MENU_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_LOGIN_MENU_MATRIX">
+          <ScalarProperty Name="LMMA_SEQUENCE" ColumnName="LMMA_SEQUENCE" />
+          <ScalarProperty Name="LMMA_FK_LOGIN_GROUP" ColumnName="LMMA_FK_LOGIN_GROUP" />
+          <ScalarProperty Name="LMMA_FK_MENU_ITEM" ColumnName="LMMA_FK_MENU_ITEM" />
+          <ScalarProperty Name="LMMA_ACCESS_LEVEL" ColumnName="LMMA_ACCESS_LEVEL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_MAIL_GROUP_PERSON_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_MAIL_GROUP_PERSON_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_MAIL_GROUP_PERSON_MATRIX">
+          <ScalarProperty Name="MGPM_SEQUENCE" ColumnName="MGPM_SEQUENCE" />
+          <ScalarProperty Name="MGPM_FK_PERSON" ColumnName="MGPM_FK_PERSON" />
+          <ScalarProperty Name="MGPM_FK_CAB_GROUP" ColumnName="MGPM_FK_CAB_GROUP" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_OFFER_DETAILS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_OFFER_DETAILS">
+        <MappingFragment StoreEntitySet="F_CAB_OFFER_DETAILS">
+          <ScalarProperty Name="OFDT_BASE_REF_ID" ColumnName="OFDT_BASE_REF_ID" />
+          <ScalarProperty Name="OFDT_SEQUENCE" ColumnName="OFDT_SEQUENCE" />
+          <ScalarProperty Name="OFDT_FK_OFFER_HEADER" ColumnName="OFDT_FK_OFFER_HEADER" />
+          <ScalarProperty Name="OFDT_FK_CAB_CODE" ColumnName="OFDT_FK_CAB_CODE" />
+          <ScalarProperty Name="OFDT_FK_CACA_SEQ" ColumnName="OFDT_FK_CACA_SEQ" />
+          <ScalarProperty Name="OFDT_FK_GROWER_ASSORTIMENT" ColumnName="OFDT_FK_GROWER_ASSORTIMENT" />
+          <ScalarProperty Name="OFDT_FK_PICTURE" ColumnName="OFDT_FK_PICTURE" />
+          <ScalarProperty Name="OFDT_FK_GREL_SEQ" ColumnName="OFDT_FK_GREL_SEQ" />
+          <ScalarProperty Name="OFDT_FK_PYDT" ColumnName="OFDT_FK_PYDT" />
+          <ScalarProperty Name="OFDT_NUM_OF_ITEMS" ColumnName="OFDT_NUM_OF_ITEMS" />
+          <ScalarProperty Name="OFDT_NUM_OF_ITEMS_ORG" ColumnName="OFDT_NUM_OF_ITEMS_ORG" />
+          <ScalarProperty Name="OFDT_NUM_OF_LAYERS" ColumnName="OFDT_NUM_OF_LAYERS" />
+          <ScalarProperty Name="OFDT_MIN_NUM_OF_ITEMS" ColumnName="OFDT_MIN_NUM_OF_ITEMS" />
+          <ScalarProperty Name="OFDT_ITEM_PRICE" ColumnName="OFDT_ITEM_PRICE" />
+          <ScalarProperty Name="OFDT_REMARK" ColumnName="OFDT_REMARK" />
+          <ScalarProperty Name="OFDT_EXT_PICTURE_REF" ColumnName="OFDT_EXT_PICTURE_REF" />
+          <ScalarProperty Name="OFDT_EXT_REF_ID" ColumnName="OFDT_EXT_REF_ID" />
+          <ScalarProperty Name="OFDT_FK_OFDT_SEQ_BASE" ColumnName="OFDT_FK_OFDT_SEQ_BASE" />
+          <ScalarProperty Name="OFDT_SPECIAL_YN" ColumnName="OFDT_SPECIAL_YN" />
+          <ScalarProperty Name="OFDT_SUPPLIER" ColumnName="OFDT_SUPPLIER" />
+          <ScalarProperty Name="OFDT_MUTATION_DATE" ColumnName="OFDT_MUTATION_DATE" />
+          <ScalarProperty Name="OFDT_ITEM_PRICE_CURRENCY" ColumnName="OFDT_ITEM_PRICE_CURRENCY" />
+          <ScalarProperty Name="OFDT_ARRIVAL_DATE" ColumnName="OFDT_ARRIVAL_DATE" />
+          <ScalarProperty Name="OFDT_DELIVERY_DATE_TIME_END" ColumnName="OFDT_DELIVERY_DATE_TIME_END" />
+          <ScalarProperty Name="OFDT_LATEST_ORDER_DATE_TIME" ColumnName="OFDT_LATEST_ORDER_DATE_TIME" />
+          <ScalarProperty Name="OFDT_LATEST_DELIVERY_DATE_TIME" ColumnName="OFDT_LATEST_DELIVERY_DATE_TIME" />
+          <ScalarProperty Name="OFDT_TRANSPORT_TYPE" ColumnName="OFDT_TRANSPORT_TYPE" />
+          <ScalarProperty Name="OFDT_CREATED_ON" ColumnName="OFDT_CREATED_ON" />
+          <ScalarProperty Name="OFDT_CREATED_BY" ColumnName="OFDT_CREATED_BY" />
+          <ScalarProperty Name="OFDT_MODIFIED_ON" ColumnName="OFDT_MODIFIED_ON" />
+          <ScalarProperty Name="OFDT_MODIFIED_BY" ColumnName="OFDT_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_OFFER_DETAILS_EXTRA">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_OFFER_DETAILS_EXTRA">
+        <MappingFragment StoreEntitySet="F_CAB_OFFER_DETAILS_EXTRA">
+          <ScalarProperty Name="OFDS_FK_OFFER_DETAIL" ColumnName="OFDS_FK_OFFER_DETAIL" />
+          <ScalarProperty Name="OFDS_PARENT_TYPE" ColumnName="OFDS_PARENT_TYPE" />
+          <ScalarProperty Name="OFDS_FROM" ColumnName="OFDS_FROM" />
+          <ScalarProperty Name="OFDS_TO" ColumnName="OFDS_TO" />
+          <ScalarProperty Name="OFDS_ITEM_PRICE" ColumnName="OFDS_ITEM_PRICE" />
+          <ScalarProperty Name="OFDS_ITEMS_FROM" ColumnName="OFDS_ITEMS_FROM" />
+          <ScalarProperty Name="OFDS_ITEMS_TO" ColumnName="OFDS_ITEMS_TO" />
+          <ScalarProperty Name="OFDS_SEQUENCE" ColumnName="OFDS_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_OFFER_HEADERS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_OFFER_HEADERS">
+        <MappingFragment StoreEntitySet="F_CAB_OFFER_HEADERS">
+          <ScalarProperty Name="OFHD_OFFER_CAPTION_SEQ" ColumnName="OFHD_OFFER_CAPTION_SEQ" />
+          <ScalarProperty Name="OFHD_FK_DMHD_SEQ" ColumnName="OFHD_FK_DMHD_SEQ" />
+          <ScalarProperty Name="OFHD_SEQUENCE" ColumnName="OFHD_SEQUENCE" />
+          <ScalarProperty Name="OFHD_FK_GROWER" ColumnName="OFHD_FK_GROWER" />
+          <ScalarProperty Name="OFHD_FK_BUYER" ColumnName="OFHD_FK_BUYER" />
+          <ScalarProperty Name="OFHD_FK_MAIN_GROUP" ColumnName="OFHD_FK_MAIN_GROUP" />
+          <ScalarProperty Name="OFHD_NO" ColumnName="OFHD_NO" />
+          <ScalarProperty Name="OFHD_VALID_FROM" ColumnName="OFHD_VALID_FROM" />
+          <ScalarProperty Name="OFHD_VALID_TO" ColumnName="OFHD_VALID_TO" />
+          <ScalarProperty Name="OFHD_DELETED_YN" ColumnName="OFHD_DELETED_YN" />
+          <ScalarProperty Name="OFHD_DELETED_BY_OWNER_YN" ColumnName="OFHD_DELETED_BY_OWNER_YN" />
+          <ScalarProperty Name="OFHD_REMARK" ColumnName="OFHD_REMARK" />
+          <ScalarProperty Name="OFHD_FK_SHOP" ColumnName="OFHD_FK_SHOP" />
+          <ScalarProperty Name="OFHD_OFFER_TYPE" ColumnName="OFHD_OFFER_TYPE" />
+          <ScalarProperty Name="OFHD_OFFER_SUB_TYPE" ColumnName="OFHD_OFFER_SUB_TYPE" />
+          <ScalarProperty Name="OFHD_FK_PYHD" ColumnName="OFHD_FK_PYHD" />
+          <ScalarProperty Name="OFHD_VBN_ART_YN" ColumnName="OFHD_VBN_ART_YN" />
+          <ScalarProperty Name="OFHD_FK_OFHD_SEQ_BASE" ColumnName="OFHD_FK_OFHD_SEQ_BASE" />
+          <ScalarProperty Name="OFHD_CAPTION" ColumnName="OFHD_CAPTION" />
+          <ScalarProperty Name="OFHD_CREATED_ON" ColumnName="OFHD_CREATED_ON" />
+          <ScalarProperty Name="OFHD_CREATED_BY" ColumnName="OFHD_CREATED_BY" />
+          <ScalarProperty Name="OFHD_MODIFIED_ON" ColumnName="OFHD_MODIFIED_ON" />
+          <ScalarProperty Name="OFHD_MODIFIED_BY" ColumnName="OFHD_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_OFFER_ORDER_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_OFFER_ORDER_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_OFFER_ORDER_MATRIX">
+          <ScalarProperty Name="OFOR_SEQUENCE" ColumnName="OFOR_SEQUENCE" />
+          <ScalarProperty Name="OFOR_FK_OFFER_DET" ColumnName="OFOR_FK_OFFER_DET" />
+          <ScalarProperty Name="OFOR_FK_ORDER_DET" ColumnName="OFOR_FK_ORDER_DET" />
+          <ScalarProperty Name="OFOR_CREATED_ON" ColumnName="OFOR_CREATED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_OFFER_SHOP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_OFFER_SHOP">
+        <MappingFragment StoreEntitySet="F_CAB_OFFER_SHOP">
+          <ScalarProperty Name="OFSP_SEQUENCE" ColumnName="OFSP_SEQUENCE" />
+          <ScalarProperty Name="OFSP_FK_OFFER" ColumnName="OFSP_FK_OFFER" />
+          <ScalarProperty Name="OFSP_FK_SHOP" ColumnName="OFSP_FK_SHOP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORDER_DET">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORDER_DET">
+        <MappingFragment StoreEntitySet="F_CAB_ORDER_DET">
+          <ScalarProperty Name="ORDE_DELIVERY_REMARK" ColumnName="ORDE_DELIVERY_REMARK" />
+          <ScalarProperty Name="ORDE_KWB_SEND_YN" ColumnName="ORDE_KWB_SEND_YN" />
+          <ScalarProperty Name="ORDE_EKT_SEND_YN" ColumnName="ORDE_EKT_SEND_YN" />
+          <ScalarProperty Name="ORDE_LATEST_ORDER_DATE_TIME" ColumnName="ORDE_LATEST_ORDER_DATE_TIME" />
+          <ScalarProperty Name="ORDE_SEQUENCE" ColumnName="ORDE_SEQUENCE" />
+          <ScalarProperty Name="ORDE_FK_ORDER_HEA" ColumnName="ORDE_FK_ORDER_HEA" />
+          <ScalarProperty Name="ORDE_FK_CAB_CODE" ColumnName="ORDE_FK_CAB_CODE" />
+          <ScalarProperty Name="ORDE_NUM_OF_ITEMS" ColumnName="ORDE_NUM_OF_ITEMS" />
+          <ScalarProperty Name="ORDE_NUM_OF_UNITS" ColumnName="ORDE_NUM_OF_UNITS" />
+          <ScalarProperty Name="ORDE_NUM_OF_ITEMS_PER_UNIT" ColumnName="ORDE_NUM_OF_ITEMS_PER_UNIT" />
+          <ScalarProperty Name="ORDE_NUM_OF_ITEMS_REST" ColumnName="ORDE_NUM_OF_ITEMS_REST" />
+          <ScalarProperty Name="ORDE_ITEM_PRICE" ColumnName="ORDE_ITEM_PRICE" />
+          <ScalarProperty Name="ORDE_FK_ORDER_DET_STATUS" ColumnName="ORDE_FK_ORDER_DET_STATUS" />
+          <ScalarProperty Name="ORDE_NETT_LINE_VALUE" ColumnName="ORDE_NETT_LINE_VALUE" />
+          <ScalarProperty Name="ORDE_LINE_ORDER" ColumnName="ORDE_LINE_ORDER" />
+          <ScalarProperty Name="ORDE_REMARK" ColumnName="ORDE_REMARK" />
+          <ScalarProperty Name="ORDE_STICKER_YN" ColumnName="ORDE_STICKER_YN" />
+          <ScalarProperty Name="ORDE_CUSTOMER_CODE" ColumnName="ORDE_CUSTOMER_CODE" />
+          <ScalarProperty Name="ORDE_FK_CASK_CODE" ColumnName="ORDE_FK_CASK_CODE" />
+          <ScalarProperty Name="ORDE_FK_CACA_SEQ" ColumnName="ORDE_FK_CACA_SEQ" />
+          <ScalarProperty Name="ORDE_NUM_OF_ITEMS_ORDERED" ColumnName="ORDE_NUM_OF_ITEMS_ORDERED" />
+          <ScalarProperty Name="ORDE_NUM_OF_ITEMS_OLD_VALUE" ColumnName="ORDE_NUM_OF_ITEMS_OLD_VALUE" />
+          <ScalarProperty Name="ORDE_NUM_OF_UNITS_OLD_VALUE" ColumnName="ORDE_NUM_OF_UNITS_OLD_VALUE" />
+          <ScalarProperty Name="ORDE_NUM_OF_IPU_OLD_VALUE" ColumnName="ORDE_NUM_OF_IPU_OLD_VALUE" />
+          <ScalarProperty Name="ORDE_NUM_OF_ITEMS_REST_OLD_VAL" ColumnName="ORDE_NUM_OF_ITEMS_REST_OLD_VAL" />
+          <ScalarProperty Name="ORDE_ITEM_PRICE_OLD_VALUE" ColumnName="ORDE_ITEM_PRICE_OLD_VALUE" />
+          <ScalarProperty Name="ORDE_REMARK_OLD_VALUE" ColumnName="ORDE_REMARK_OLD_VALUE" />
+          <ScalarProperty Name="ORDE_STICKER_YN_OLD_VALUE" ColumnName="ORDE_STICKER_YN_OLD_VALUE" />
+          <ScalarProperty Name="ORDE_CUST_CODE_OLD_VALUE" ColumnName="ORDE_CUST_CODE_OLD_VALUE" />
+          <ScalarProperty Name="ORDE_FK_CASK_CODE_OLD_VALUE" ColumnName="ORDE_FK_CASK_CODE_OLD_VALUE" />
+          <ScalarProperty Name="ORDE_FK_CACA_SEQ_OLD_VALUE" ColumnName="ORDE_FK_CACA_SEQ_OLD_VALUE" />
+          <ScalarProperty Name="ORDE_EXT_REF_ID" ColumnName="ORDE_EXT_REF_ID" />
+          <ScalarProperty Name="ORDE_CREATED_ON" ColumnName="ORDE_CREATED_ON" />
+          <ScalarProperty Name="ORDE_CREATED_BY" ColumnName="ORDE_CREATED_BY" />
+          <ScalarProperty Name="ORDE_MODIFIED_ON" ColumnName="ORDE_MODIFIED_ON" />
+          <ScalarProperty Name="ORDE_MODIFIED_BY" ColumnName="ORDE_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORDER_HEA">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORDER_HEA">
+        <MappingFragment StoreEntitySet="F_CAB_ORDER_HEA">
+          <ScalarProperty Name="ORHE_AUTO_CREATED_YN" ColumnName="ORHE_AUTO_CREATED_YN" />
+          <ScalarProperty Name="ORHE_FK_ORGA_LOGP" ColumnName="ORHE_FK_ORGA_LOGP" />
+          <ScalarProperty Name="ORHE_SEQUENCE" ColumnName="ORHE_SEQUENCE" />
+          <ScalarProperty Name="ORHE_FK_SHOP" ColumnName="ORHE_FK_SHOP" />
+          <ScalarProperty Name="ORHE_FK_MAIN_GROUP" ColumnName="ORHE_FK_MAIN_GROUP" />
+          <ScalarProperty Name="ORHE_FK_BUYER" ColumnName="ORHE_FK_BUYER" />
+          <ScalarProperty Name="ORHE_FK_GROWER" ColumnName="ORHE_FK_GROWER" />
+          <ScalarProperty Name="ORHE_FK_PERSON" ColumnName="ORHE_FK_PERSON" />
+          <ScalarProperty Name="ORHE_FK_ORDER_STATUS" ColumnName="ORHE_FK_ORDER_STATUS" />
+          <ScalarProperty Name="ORHE_FK_BULK_CASK" ColumnName="ORHE_FK_BULK_CASK" />
+          <ScalarProperty Name="ORHE_FK_BULK_CASK_OLD_VALUE" ColumnName="ORHE_FK_BULK_CASK_OLD_VALUE" />
+          <ScalarProperty Name="ORHE_DATE" ColumnName="ORHE_DATE" />
+          <ScalarProperty Name="ORHE_NO" ColumnName="ORHE_NO" />
+          <ScalarProperty Name="ORHE_ORDER_TYPE" ColumnName="ORHE_ORDER_TYPE" />
+          <ScalarProperty Name="ORHE_DESC" ColumnName="ORHE_DESC" />
+          <ScalarProperty Name="ORHE_DELIVERY_DATE" ColumnName="ORHE_DELIVERY_DATE" />
+          <ScalarProperty Name="ORHE_NETT_HEADER_VALUE" ColumnName="ORHE_NETT_HEADER_VALUE" />
+          <ScalarProperty Name="ORHE_DESC_OLD_VALUE" ColumnName="ORHE_DESC_OLD_VALUE" />
+          <ScalarProperty Name="ORHE_DEL_DATE_OLD_VALUE" ColumnName="ORHE_DEL_DATE_OLD_VALUE" />
+          <ScalarProperty Name="ORHE_REMARK" ColumnName="ORHE_REMARK" />
+          <ScalarProperty Name="ORHE_SENT_MAIL_YN" ColumnName="ORHE_SENT_MAIL_YN" />
+          <ScalarProperty Name="ORHE_SMS" ColumnName="ORHE_SMS" />
+          <ScalarProperty Name="ORHE_MAIL_STATUS" ColumnName="ORHE_MAIL_STATUS" />
+          <ScalarProperty Name="ORHE_CREATED_BY" ColumnName="ORHE_CREATED_BY" />
+          <ScalarProperty Name="ORHE_CREATED_ON" ColumnName="ORHE_CREATED_ON" />
+          <ScalarProperty Name="ORHE_MODIFIED_BY" ColumnName="ORHE_MODIFIED_BY" />
+          <ScalarProperty Name="ORHE_MODIFIED_ON" ColumnName="ORHE_MODIFIED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORDER_SERVICES_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORDER_SERVICES_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_ORDER_SERVICES_MATRIX">
+          <ScalarProperty Name="OSMA_SEQUENCE" ColumnName="OSMA_SEQUENCE" />
+          <ScalarProperty Name="OSMA_FK_ORDE_SEQ" ColumnName="OSMA_FK_ORDE_SEQ" />
+          <ScalarProperty Name="OSMA_FK_SERV_SEQ" ColumnName="OSMA_FK_SERV_SEQ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORDER_SHOP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORDER_SHOP">
+        <MappingFragment StoreEntitySet="F_CAB_ORDER_SHOP">
+          <ScalarProperty Name="ORSP_SEQUENCE" ColumnName="ORSP_SEQUENCE" />
+          <ScalarProperty Name="ORSP_FK_ORDER" ColumnName="ORSP_FK_ORDER" />
+          <ScalarProperty Name="ORSP_FK_SHOP" ColumnName="ORSP_FK_SHOP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORGA_CURRENCY_RATE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORGA_CURRENCY_RATE">
+        <MappingFragment StoreEntitySet="F_CAB_ORGA_CURRENCY_RATE">
+          <ScalarProperty Name="OCRE_SEQUENCE" ColumnName="OCRE_SEQUENCE" />
+          <ScalarProperty Name="OCRE_FK_ORGA" ColumnName="OCRE_FK_ORGA" />
+          <ScalarProperty Name="OCRE_FK_CDCU" ColumnName="OCRE_FK_CDCU" />
+          <ScalarProperty Name="OCRE_DATE" ColumnName="OCRE_DATE" />
+          <ScalarProperty Name="OCRE_RATE_ONE_EURO" ColumnName="OCRE_RATE_ONE_EURO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORGA_MAIN_GROUP_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORGA_MAIN_GROUP_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_ORGA_MAIN_GROUP_MATRIX">
+          <ScalarProperty Name="ORMA_SEQUENCE" ColumnName="ORMA_SEQUENCE" />
+          <ScalarProperty Name="ORMA_FK_ORGA" ColumnName="ORMA_FK_ORGA" />
+          <ScalarProperty Name="ORMA_FK_MAIN_GROUP" ColumnName="ORMA_FK_MAIN_GROUP" />
+          <ScalarProperty Name="ORMA_ORDER" ColumnName="ORMA_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORGANISATION">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORGANISATION">
+        <MappingFragment StoreEntitySet="F_CAB_ORGANISATION">
+          <ScalarProperty Name="ORGA_EMAIL_2" ColumnName="ORGA_EMAIL_2" />
+          <ScalarProperty Name="ORGA_SEQUENCE" ColumnName="ORGA_SEQUENCE" />
+          <ScalarProperty Name="ORGA_NAME" ColumnName="ORGA_NAME" />
+          <ScalarProperty Name="ORGA_NAME_UPPER" ColumnName="ORGA_NAME_UPPER" />
+          <ScalarProperty Name="ORGA_PHONE_NO" ColumnName="ORGA_PHONE_NO" />
+          <ScalarProperty Name="ORGA_FAX_NO" ColumnName="ORGA_FAX_NO" />
+          <ScalarProperty Name="ORGA_EMAIL" ColumnName="ORGA_EMAIL" />
+          <ScalarProperty Name="ORGA_VAT_NUMBER" ColumnName="ORGA_VAT_NUMBER" />
+          <ScalarProperty Name="ORGA_MAILBOX" ColumnName="ORGA_MAILBOX" />
+          <ScalarProperty Name="ORGA_TYPE" ColumnName="ORGA_TYPE" />
+          <ScalarProperty Name="ORGA_VBA_NUMBER" ColumnName="ORGA_VBA_NUMBER" />
+          <ScalarProperty Name="ORGA_BVH_NUMBER" ColumnName="ORGA_BVH_NUMBER" />
+          <ScalarProperty Name="ORGA_EAN_CODE" ColumnName="ORGA_EAN_CODE" />
+          <ScalarProperty Name="ORGA_START_DATE" ColumnName="ORGA_START_DATE" />
+          <ScalarProperty Name="ORGA_END_DATE" ColumnName="ORGA_END_DATE" />
+          <ScalarProperty Name="ORGA_CODE" ColumnName="ORGA_CODE" />
+          <ScalarProperty Name="ORGA_FK_PICTURE" ColumnName="ORGA_FK_PICTURE" />
+          <ScalarProperty Name="ORGA_REFER" ColumnName="ORGA_REFER" />
+          <ScalarProperty Name="ORGA_FK_SHOP_SKIN" ColumnName="ORGA_FK_SHOP_SKIN" />
+          <ScalarProperty Name="ORGA_CREATED_ON" ColumnName="ORGA_CREATED_ON" />
+          <ScalarProperty Name="ORGA_CREATED_BY" ColumnName="ORGA_CREATED_BY" />
+          <ScalarProperty Name="ORGA_MODIFIED_ON" ColumnName="ORGA_MODIFIED_ON" />
+          <ScalarProperty Name="ORGA_MODIFIED_BY" ColumnName="ORGA_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORGANISATION_ADMIN">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORGANISATION_ADMIN">
+        <MappingFragment StoreEntitySet="F_CAB_ORGANISATION_ADMIN">
+          <ScalarProperty Name="ORAD_SEQUENCE" ColumnName="ORAD_SEQUENCE" />
+          <ScalarProperty Name="ORAD_FK_ORGANISATION" ColumnName="ORAD_FK_ORGANISATION" />
+          <ScalarProperty Name="ORAD_STATUS" ColumnName="ORAD_STATUS" />
+          <ScalarProperty Name="ORAD_MEMBERTYPE" ColumnName="ORAD_MEMBERTYPE" />
+          <ScalarProperty Name="ORAD_DATE" ColumnName="ORAD_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORGANISATION_FUNCTION">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORGANISATION_FUNCTION">
+        <MappingFragment StoreEntitySet="F_CAB_ORGANISATION_FUNCTION">
+          <ScalarProperty Name="ORFU_SEQUENCE" ColumnName="ORFU_SEQUENCE" />
+          <ScalarProperty Name="ORFU_FK_ORGA" ColumnName="ORFU_FK_ORGA" />
+          <ScalarProperty Name="ORFU_FK_FUNC" ColumnName="ORFU_FK_FUNC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORGANISATION_INFO">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORGANISATION_INFO">
+        <MappingFragment StoreEntitySet="F_CAB_ORGANISATION_INFO">
+          <ScalarProperty Name="ORGI_ORDER_NAME" ColumnName="ORGI_ORDER_NAME" />
+          <ScalarProperty Name="ORGI_SEQUENCE" ColumnName="ORGI_SEQUENCE" />
+          <ScalarProperty Name="ORGI_FK_ORGA_SEQ" ColumnName="ORGI_FK_ORGA_SEQ" />
+          <ScalarProperty Name="ORGI_FK_PERS_BUYER_SEQ" ColumnName="ORGI_FK_PERS_BUYER_SEQ" />
+          <ScalarProperty Name="ORGI_FK_CDCU_SEQ" ColumnName="ORGI_FK_CDCU_SEQ" />
+          <ScalarProperty Name="ORGI_SHIPPING_DAYS" ColumnName="ORGI_SHIPPING_DAYS" />
+          <ScalarProperty Name="ORGI_ORDER_DELIVER_DAYS" ColumnName="ORGI_ORDER_DELIVER_DAYS" />
+          <ScalarProperty Name="ORGI_OFFER_DELIVER_DAYS" ColumnName="ORGI_OFFER_DELIVER_DAYS" />
+          <ScalarProperty Name="ORGI_ORDER_OFFSET_DAYS" ColumnName="ORGI_ORDER_OFFSET_DAYS" />
+          <ScalarProperty Name="ORGI_OFFER_OFFSET_DAYS" ColumnName="ORGI_OFFER_OFFSET_DAYS" />
+          <ScalarProperty Name="ORGI_DEADLINE" ColumnName="ORGI_DEADLINE" />
+          <ScalarProperty Name="ORGI_DEADLINE_OFFER" ColumnName="ORGI_DEADLINE_OFFER" />
+          <ScalarProperty Name="ORGI_CONTACT_NAME" ColumnName="ORGI_CONTACT_NAME" />
+          <ScalarProperty Name="ORGI_CONTACT_PHONE_NO" ColumnName="ORGI_CONTACT_PHONE_NO" />
+          <ScalarProperty Name="ORGI_CONTACT_FAX_NO" ColumnName="ORGI_CONTACT_FAX_NO" />
+          <ScalarProperty Name="ORGI_CONTACT_EMAIL" ColumnName="ORGI_CONTACT_EMAIL" />
+          <ScalarProperty Name="ORGI_LATEST_DELIVERY_DATE_TIME" ColumnName="ORGI_LATEST_DELIVERY_DATE_TIME" />
+          <ScalarProperty Name="ORGI_CREATED_ON" ColumnName="ORGI_CREATED_ON" />
+          <ScalarProperty Name="ORGI_CREATED_BY" ColumnName="ORGI_CREATED_BY" />
+          <ScalarProperty Name="ORGI_MODIFIED_ON" ColumnName="ORGI_MODIFIED_ON" />
+          <ScalarProperty Name="ORGI_MODIFIED_BY" ColumnName="ORGI_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ORGANISATION_SERVICES">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ORGANISATION_SERVICES">
+        <MappingFragment StoreEntitySet="F_CAB_ORGANISATION_SERVICES">
+          <ScalarProperty Name="ORSE_SEQUENCE" ColumnName="ORSE_SEQUENCE" />
+          <ScalarProperty Name="ORSE_FK_ORGA_SEQ" ColumnName="ORSE_FK_ORGA_SEQ" />
+          <ScalarProperty Name="ORSE_FK_SERV_SEQ" ColumnName="ORSE_FK_SERV_SEQ" />
+          <ScalarProperty Name="ORSE_COST" ColumnName="ORSE_COST" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_PARTY_BOOKING">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_PARTY_BOOKING">
+        <MappingFragment StoreEntitySet="F_CAB_PARTY_BOOKING">
+          <ScalarProperty Name="PYBG_SEQUENCE" ColumnName="PYBG_SEQUENCE" />
+          <ScalarProperty Name="PYBG_FK_PYDT" ColumnName="PYBG_FK_PYDT" />
+          <ScalarProperty Name="PYGB_NUM_OF_ITEMS" ColumnName="PYGB_NUM_OF_ITEMS" />
+          <ScalarProperty Name="PYBG_FK_ORDE" ColumnName="PYBG_FK_ORDE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_PARTY_DETAIL">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_PARTY_DETAIL">
+        <MappingFragment StoreEntitySet="F_CAB_PARTY_DETAIL">
+          <ScalarProperty Name="PYDT_SEQUENCE" ColumnName="PYDT_SEQUENCE" />
+          <ScalarProperty Name="PYDT_FK_PYHD" ColumnName="PYDT_FK_PYHD" />
+          <ScalarProperty Name="PYDT_FK_CAB_CODE" ColumnName="PYDT_FK_CAB_CODE" />
+          <ScalarProperty Name="PYDT_FK_CACA_SEQ" ColumnName="PYDT_FK_CACA_SEQ" />
+          <ScalarProperty Name="PYDT_NUM_OF_ITEMS" ColumnName="PYDT_NUM_OF_ITEMS" />
+          <ScalarProperty Name="PYDT_NUM_OF_ITEMS_INITIAL" ColumnName="PYDT_NUM_OF_ITEMS_INITIAL" />
+          <ScalarProperty Name="PYDT_FK_OFDT" ColumnName="PYDT_FK_OFDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_PARTY_HEADER">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_PARTY_HEADER">
+        <MappingFragment StoreEntitySet="F_CAB_PARTY_HEADER">
+          <ScalarProperty Name="PYHD_SEQUENCE" ColumnName="PYHD_SEQUENCE" />
+          <ScalarProperty Name="PYHD_FK_OFHD_SEQ" ColumnName="PYHD_FK_OFHD_SEQ" />
+          <ScalarProperty Name="PYHD_FK_GROWER" ColumnName="PYHD_FK_GROWER" />
+          <ScalarProperty Name="PYHD_VALID_FROM" ColumnName="PYHD_VALID_FROM" />
+          <ScalarProperty Name="PYHD_VALID_TO" ColumnName="PYHD_VALID_TO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_PERSON">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_PERSON">
+        <MappingFragment StoreEntitySet="F_CAB_PERSON">
+          <ScalarProperty Name="PERS_REF_EKT" ColumnName="PERS_REF_EKT" />
+          <ScalarProperty Name="PERS_SEQUENCE" ColumnName="PERS_SEQUENCE" />
+          <ScalarProperty Name="PERS_FK_ORGANISATION" ColumnName="PERS_FK_ORGANISATION" />
+          <ScalarProperty Name="PERS_FIRST_NAME" ColumnName="PERS_FIRST_NAME" />
+          <ScalarProperty Name="PERS_MIDDLE_NAME" ColumnName="PERS_MIDDLE_NAME" />
+          <ScalarProperty Name="PERS_LAST_NAME" ColumnName="PERS_LAST_NAME" />
+          <ScalarProperty Name="PERS_PHONE_NO" ColumnName="PERS_PHONE_NO" />
+          <ScalarProperty Name="PERS_EMAIL" ColumnName="PERS_EMAIL" />
+          <ScalarProperty Name="PERS_EXT_REF" ColumnName="PERS_EXT_REF" />
+          <ScalarProperty Name="PERS_CREATED_ON" ColumnName="PERS_CREATED_ON" />
+          <ScalarProperty Name="PERS_CREATED_BY" ColumnName="PERS_CREATED_BY" />
+          <ScalarProperty Name="PERS_MODIFIED_ON" ColumnName="PERS_MODIFIED_ON" />
+          <ScalarProperty Name="PERS_MODIFIED_BY" ColumnName="PERS_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_PICTURE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_PICTURE">
+        <MappingFragment StoreEntitySet="F_CAB_PICTURE">
+          <ScalarProperty Name="PICT_SEQUENCE" ColumnName="PICT_SEQUENCE" />
+          <ScalarProperty Name="PICT_PICTURE" ColumnName="PICT_PICTURE" />
+          <ScalarProperty Name="PICT_ARTDESC" ColumnName="PICT_ARTDESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_PRINT_LOG">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_PRINT_LOG">
+        <MappingFragment StoreEntitySet="F_CAB_PRINT_LOG">
+          <ScalarProperty Name="PRLO_SEQUENCE" ColumnName="PRLO_SEQUENCE" />
+          <ScalarProperty Name="PRLO_FK_TOPRINT" ColumnName="PRLO_FK_TOPRINT" />
+          <ScalarProperty Name="PRLO_PRINTED_DATETIME" ColumnName="PRLO_PRINTED_DATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_PROP_MAIN_GROUP_MATRIX">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_PROP_MAIN_GROUP_MATRIX">
+        <MappingFragment StoreEntitySet="F_CAB_PROP_MAIN_GROUP_MATRIX">
+          <ScalarProperty Name="MGPT_SEQUENCE" ColumnName="MGPT_SEQUENCE" />
+          <ScalarProperty Name="MGPT_FK_MAIN_GROUP" ColumnName="MGPT_FK_MAIN_GROUP" />
+          <ScalarProperty Name="MGPT_FK_PROP_TYPE" ColumnName="MGPT_FK_PROP_TYPE" />
+          <ScalarProperty Name="MGPT_ORDER" ColumnName="MGPT_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_PROPERTY">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_PROPERTY">
+        <MappingFragment StoreEntitySet="F_CAB_PROPERTY">
+          <ScalarProperty Name="PPTY_SEQUENCE" ColumnName="PPTY_SEQUENCE" />
+          <ScalarProperty Name="PPTY_TYPE" ColumnName="PPTY_TYPE" />
+          <ScalarProperty Name="PPTY_KEY" ColumnName="PPTY_KEY" />
+          <ScalarProperty Name="PPTY_NAME" ColumnName="PPTY_NAME" />
+          <ScalarProperty Name="PPTY_INDEX" ColumnName="PPTY_INDEX" />
+          <ScalarProperty Name="PPTY_REFERENCE" ColumnName="PPTY_REFERENCE" />
+          <ScalarProperty Name="PPTY_YESNO" ColumnName="PPTY_YESNO" />
+          <ScalarProperty Name="PPTY_TEXT" ColumnName="PPTY_TEXT" />
+          <ScalarProperty Name="PPTY_DATETIME" ColumnName="PPTY_DATETIME" />
+          <ScalarProperty Name="PPTY_NUMBER" ColumnName="PPTY_NUMBER" />
+          <ScalarProperty Name="PPTY_MONEY" ColumnName="PPTY_MONEY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_QUEUE_CODE_REQ_CASK">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_QUEUE_CODE_REQ_CASK">
+        <MappingFragment StoreEntitySet="F_CAB_QUEUE_CODE_REQ_CASK">
+          <ScalarProperty Name="QCRC_FK_CODE_REQUEST" ColumnName="QCRC_FK_CODE_REQUEST" />
+          <ScalarProperty Name="QCRC_FK_CASK" ColumnName="QCRC_FK_CASK" />
+          <ScalarProperty Name="QCRC_NUM_OF_UNITS" ColumnName="QCRC_NUM_OF_UNITS" />
+          <ScalarProperty Name="QCRC_UNITS_PER_LAYER" ColumnName="QCRC_UNITS_PER_LAYER" />
+          <ScalarProperty Name="QCRC_LAYERS_PER_TROLLEY" ColumnName="QCRC_LAYERS_PER_TROLLEY" />
+          <ScalarProperty Name="QCRC_SEQUENCE" ColumnName="QCRC_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_QUEUE_CODE_REQ_DETAIL">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_QUEUE_CODE_REQ_DETAIL">
+        <MappingFragment StoreEntitySet="F_CAB_QUEUE_CODE_REQ_DETAIL">
+          <ScalarProperty Name="QCRD_FK_CODE_REQUEST" ColumnName="QCRD_FK_CODE_REQUEST" />
+          <ScalarProperty Name="QCRD_FK_CAB_PROP_TYPE" ColumnName="QCRD_FK_CAB_PROP_TYPE" />
+          <ScalarProperty Name="QCRD_PROP_VALUE" ColumnName="QCRD_PROP_VALUE" />
+          <ScalarProperty Name="QCRD_PROP_DESC" ColumnName="QCRD_PROP_DESC" />
+          <ScalarProperty Name="QCRD_ASS_PROP_VALUE" ColumnName="QCRD_ASS_PROP_VALUE" />
+          <ScalarProperty Name="QCRD_ASS_PROP_DESC" ColumnName="QCRD_ASS_PROP_DESC" />
+          <ScalarProperty Name="QCRD_SEQUENCE" ColumnName="QCRD_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_QUEUE_CODE_REQUEST">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_QUEUE_CODE_REQUEST">
+        <MappingFragment StoreEntitySet="F_CAB_QUEUE_CODE_REQUEST">
+          <ScalarProperty Name="QCRQ_FK_GROWER" ColumnName="QCRQ_FK_GROWER" />
+          <ScalarProperty Name="QCRQ_FK_VBN_CODE" ColumnName="QCRQ_FK_VBN_CODE" />
+          <ScalarProperty Name="QCRQ_FK_CAB_GROUP_TYPE" ColumnName="QCRQ_FK_CAB_GROUP_TYPE" />
+          <ScalarProperty Name="QCRQ_CAB_DESC" ColumnName="QCRQ_CAB_DESC" />
+          <ScalarProperty Name="QCRQ_REQUEST_DATE" ColumnName="QCRQ_REQUEST_DATE" />
+          <ScalarProperty Name="QCRQ_STATUS" ColumnName="QCRQ_STATUS" />
+          <ScalarProperty Name="QCRQ_HANDLED_DATE" ColumnName="QCRQ_HANDLED_DATE" />
+          <ScalarProperty Name="QCRQ_HANDLED_BY" ColumnName="QCRQ_HANDLED_BY" />
+          <ScalarProperty Name="QCRQ_FK_CAB_GROUP_ASSIGNED" ColumnName="QCRQ_FK_CAB_GROUP_ASSIGNED" />
+          <ScalarProperty Name="QCRQ_FK_CAB_CODE_ASSIGNED" ColumnName="QCRQ_FK_CAB_CODE_ASSIGNED" />
+          <ScalarProperty Name="QCRQ_CAB_DESC_ASSIGNED" ColumnName="QCRQ_CAB_DESC_ASSIGNED" />
+          <ScalarProperty Name="QCRQ_GROWER_REMARK" ColumnName="QCRQ_GROWER_REMARK" />
+          <ScalarProperty Name="QCRQ_REMARK" ColumnName="QCRQ_REMARK" />
+          <ScalarProperty Name="QCRQ_FK_PICTURE" ColumnName="QCRQ_FK_PICTURE" />
+          <ScalarProperty Name="QCRQ_FK_CAB_GT_ASSIGNED" ColumnName="QCRQ_FK_CAB_GT_ASSIGNED" />
+          <ScalarProperty Name="QCRQ_FK_PD_GROUP_ASSIGNED" ColumnName="QCRQ_FK_PD_GROUP_ASSIGNED" />
+          <ScalarProperty Name="QCRQ_SEQUENCE" ColumnName="QCRQ_SEQUENCE" />
+          <ScalarProperty Name="QCRQ_HIDDEN_YN" ColumnName="QCRQ_HIDDEN_YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_QUEUE_PICTURE_KILLER">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_QUEUE_PICTURE_KILLER">
+        <MappingFragment StoreEntitySet="F_CAB_QUEUE_PICTURE_KILLER">
+          <ScalarProperty Name="QPKL_FK_CAB_CODE" ColumnName="QPKL_FK_CAB_CODE" />
+          <ScalarProperty Name="QPKL_SEQUENCE" ColumnName="QPKL_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_QUEUE_PROCESSING">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_QUEUE_PROCESSING">
+        <MappingFragment StoreEntitySet="F_CAB_QUEUE_PROCESSING">
+          <ScalarProperty Name="QPRO_SEQUENCE" ColumnName="QPRO_SEQUENCE" />
+          <ScalarProperty Name="QPRO_FK_ORHD_SEQ" ColumnName="QPRO_FK_ORHD_SEQ" />
+          <ScalarProperty Name="QPRO_FK_OFHD_SEQ" ColumnName="QPRO_FK_OFHD_SEQ" />
+          <ScalarProperty Name="QPRO_FK_ORGA_SEQ" ColumnName="QPRO_FK_ORGA_SEQ" />
+          <ScalarProperty Name="QPRO_FK_HAND_SEQ" ColumnName="QPRO_FK_HAND_SEQ" />
+          <ScalarProperty Name="QPRO_FK_PICT_REF_SEQ" ColumnName="QPRO_FK_PICT_REF_SEQ" />
+          <ScalarProperty Name="QPRO_FK_PICT_REF_TYPE" ColumnName="QPRO_FK_PICT_REF_TYPE" />
+          <ScalarProperty Name="QPRO_PROCESS_TYPE" ColumnName="QPRO_PROCESS_TYPE" />
+          <ScalarProperty Name="QPRO_INSERTED_ON" ColumnName="QPRO_INSERTED_ON" />
+          <ScalarProperty Name="QPRO_PROCESSED_ON" ColumnName="QPRO_PROCESSED_ON" />
+          <ScalarProperty Name="QPRO_MAIL_CONTENT" ColumnName="QPRO_MAIL_CONTENT" />
+          <ScalarProperty Name="QPRO_LAST_TRY_ON" ColumnName="QPRO_LAST_TRY_ON" />
+          <ScalarProperty Name="QPRO_NUMBER_OF_TRIES" ColumnName="QPRO_NUMBER_OF_TRIES" />
+          <ScalarProperty Name="QPRO_CREATED_ON" ColumnName="QPRO_CREATED_ON" />
+          <ScalarProperty Name="QPRO_CREATED_BY" ColumnName="QPRO_CREATED_BY" />
+          <ScalarProperty Name="QPRO_MODIFIED_ON" ColumnName="QPRO_MODIFIED_ON" />
+          <ScalarProperty Name="QPRO_MODIFIED_BY" ColumnName="QPRO_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_RELATION">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_RELATION">
+        <MappingFragment StoreEntitySet="F_CAB_RELATION">
+          <ScalarProperty Name="RELA_SEQUENCE" ColumnName="RELA_SEQUENCE" />
+          <ScalarProperty Name="RELA_FK_TYPE" ColumnName="RELA_FK_TYPE" />
+          <ScalarProperty Name="RELA_FK_PARENT" ColumnName="RELA_FK_PARENT" />
+          <ScalarProperty Name="RELA_FK_CHILD" ColumnName="RELA_FK_CHILD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_RIGHT">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_RIGHT">
+        <MappingFragment StoreEntitySet="F_CAB_RIGHT">
+          <ScalarProperty Name="RIGH_SEQUENCE" ColumnName="RIGH_SEQUENCE" />
+          <ScalarProperty Name="RIGH_FK_LOGIN" ColumnName="RIGH_FK_LOGIN" />
+          <ScalarProperty Name="RIGH_ITEM_NAME" ColumnName="RIGH_ITEM_NAME" />
+          <ScalarProperty Name="RIGH_ALLOWS" ColumnName="RIGH_ALLOWS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_ROLE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_ROLE">
+        <MappingFragment StoreEntitySet="F_CAB_ROLE">
+          <ScalarProperty Name="ROLE_SEQUENCE" ColumnName="ROLE_SEQUENCE" />
+          <ScalarProperty Name="ROLE_CODE" ColumnName="ROLE_CODE" />
+          <ScalarProperty Name="ROLE_DESCRIPTION" ColumnName="ROLE_DESCRIPTION" />
+          <ScalarProperty Name="ROLE_REMARK" ColumnName="ROLE_REMARK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SERVICE_SEED">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SERVICE_SEED">
+        <MappingFragment StoreEntitySet="F_CAB_SERVICE_SEED">
+          <ScalarProperty Name="SESD_SEQUENCE" ColumnName="SESD_SEQUENCE" />
+          <ScalarProperty Name="SESD_SEED" ColumnName="SESD_SEED" />
+          <ScalarProperty Name="SESD_CREATED" ColumnName="SESD_CREATED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SERVICE_TICKET">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SERVICE_TICKET">
+        <MappingFragment StoreEntitySet="F_CAB_SERVICE_TICKET">
+          <ScalarProperty Name="SETT_SEQUENCE" ColumnName="SETT_SEQUENCE" />
+          <ScalarProperty Name="SETT_FK_LOGI" ColumnName="SETT_FK_LOGI" />
+          <ScalarProperty Name="SETT_TICKET" ColumnName="SETT_TICKET" />
+          <ScalarProperty Name="SETT_CREATED" ColumnName="SETT_CREATED" />
+          <ScalarProperty Name="SETT_LASTREQUEST" ColumnName="SETT_LASTREQUEST" />
+          <ScalarProperty Name="SETT_REQUESTSEQUENCE" ColumnName="SETT_REQUESTSEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SERVICES">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SERVICES">
+        <MappingFragment StoreEntitySet="F_CAB_SERVICES">
+          <ScalarProperty Name="SERV_SEQUENCE" ColumnName="SERV_SEQUENCE" />
+          <ScalarProperty Name="SERV_DESC" ColumnName="SERV_DESC" />
+          <ScalarProperty Name="SERV_COST" ColumnName="SERV_COST" />
+          <ScalarProperty Name="SERV_CODE" ColumnName="SERV_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SETTINGS">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SETTINGS">
+        <MappingFragment StoreEntitySet="F_CAB_SETTINGS">
+          <ScalarProperty Name="SETG_SEQUENCE" ColumnName="SETG_SEQUENCE" />
+          <ScalarProperty Name="SETG_FK_SHOP_SEQ" ColumnName="SETG_FK_SHOP_SEQ" />
+          <ScalarProperty Name="SETG_FK_SPSN_SEQ" ColumnName="SETG_FK_SPSN_SEQ" />
+          <ScalarProperty Name="SETG_FK_ORGA_SEQ" ColumnName="SETG_FK_ORGA_SEQ" />
+          <ScalarProperty Name="SETG_FK_PERS_SEQ" ColumnName="SETG_FK_PERS_SEQ" />
+          <ScalarProperty Name="SETG_CODE_ID" ColumnName="SETG_CODE_ID" />
+          <ScalarProperty Name="SETG_DESCRIPTION" ColumnName="SETG_DESCRIPTION" />
+          <ScalarProperty Name="SETG_VALUE" ColumnName="SETG_VALUE" />
+          <ScalarProperty Name="SETG_AUTH_LEVEL_SHOP" ColumnName="SETG_AUTH_LEVEL_SHOP" />
+          <ScalarProperty Name="SETG_AUTH_LEVEL_SPSN" ColumnName="SETG_AUTH_LEVEL_SPSN" />
+          <ScalarProperty Name="SETG_AUTH_LEVEL_ORGA" ColumnName="SETG_AUTH_LEVEL_ORGA" />
+          <ScalarProperty Name="SETG_AUTH_LEVEL_PERS" ColumnName="SETG_AUTH_LEVEL_PERS" />
+          <ScalarProperty Name="SETG_CREATED_ON" ColumnName="SETG_CREATED_ON" />
+          <ScalarProperty Name="SETG_CREATED_BY" ColumnName="SETG_CREATED_BY" />
+          <ScalarProperty Name="SETG_MODIFIED_ON" ColumnName="SETG_MODIFIED_ON" />
+          <ScalarProperty Name="SETG_MODIFIED_BY" ColumnName="SETG_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SHOP">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SHOP">
+        <MappingFragment StoreEntitySet="F_CAB_SHOP">
+          <ScalarProperty Name="SHOP_SEQUENCE" ColumnName="SHOP_SEQUENCE" />
+          <ScalarProperty Name="SHOP_CODE" ColumnName="SHOP_CODE" />
+          <ScalarProperty Name="SHOP_DESCRIPTION" ColumnName="SHOP_DESCRIPTION" />
+          <ScalarProperty Name="SHOP_REMARK" ColumnName="SHOP_REMARK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SHOP_EVIDENCE">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SHOP_EVIDENCE">
+        <MappingFragment StoreEntitySet="F_CAB_SHOP_EVIDENCE">
+          <ScalarProperty Name="SPEE_SEQUENCE" ColumnName="SPEE_SEQUENCE" />
+          <ScalarProperty Name="SPEE_FK_SHOP" ColumnName="SPEE_FK_SHOP" />
+          <ScalarProperty Name="SPEE_FK_SPSN" ColumnName="SPEE_FK_SPSN" />
+          <ScalarProperty Name="SPEE_SERVICE" ColumnName="SPEE_SERVICE" />
+          <ScalarProperty Name="SPEE_TYPE" ColumnName="SPEE_TYPE" />
+          <ScalarProperty Name="SPEE_VALUE" ColumnName="SPEE_VALUE" />
+          <ScalarProperty Name="SPEE_WEIGHT" ColumnName="SPEE_WEIGHT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SHOP_FUNCTION">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SHOP_FUNCTION">
+        <MappingFragment StoreEntitySet="F_CAB_SHOP_FUNCTION">
+          <ScalarProperty Name="SPFN_SEQUENCE" ColumnName="SPFN_SEQUENCE" />
+          <ScalarProperty Name="SPFN_FK_SHOP" ColumnName="SPFN_FK_SHOP" />
+          <ScalarProperty Name="SPFN_FK_FUNC" ColumnName="SPFN_FK_FUNC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SHOP_ORGANISATION">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SHOP_ORGANISATION">
+        <MappingFragment StoreEntitySet="F_CAB_SHOP_ORGANISATION">
+          <ScalarProperty Name="SPON_SEQUENCE" ColumnName="SPON_SEQUENCE" />
+          <ScalarProperty Name="SPON_FK_SHOP" ColumnName="SPON_FK_SHOP" />
+          <ScalarProperty Name="SPON_FK_ORGA" ColumnName="SPON_FK_ORGA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SHOP_ORGANISATION_FUNCTION">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SHOP_ORGANISATION_FUNCTION">
+        <MappingFragment StoreEntitySet="F_CAB_SHOP_ORGANISATION_FUNCTION">
+          <ScalarProperty Name="SPOF_SEQUENCE" ColumnName="SPOF_SEQUENCE" />
+          <ScalarProperty Name="SPOF_FK_SPON" ColumnName="SPOF_FK_SPON" />
+          <ScalarProperty Name="SPOF_FK_FUNC" ColumnName="SPOF_FK_FUNC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SHOP_PROPERTY">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SHOP_PROPERTY">
+        <MappingFragment StoreEntitySet="F_CAB_SHOP_PROPERTY">
+          <ScalarProperty Name="SPPY_SEQUENCE" ColumnName="SPPY_SEQUENCE" />
+          <ScalarProperty Name="SPPY_FK_SHOP" ColumnName="SPPY_FK_SHOP" />
+          <ScalarProperty Name="SPPY_FK_SPSN" ColumnName="SPPY_FK_SPSN" />
+          <ScalarProperty Name="SPPY_SERVICE" ColumnName="SPPY_SERVICE" />
+          <ScalarProperty Name="SPPY_NAME" ColumnName="SPPY_NAME" />
+          <ScalarProperty Name="SPPY_VALUE" ColumnName="SPPY_VALUE" />
+          <ScalarProperty Name="SPPY_WEIGHT" ColumnName="SPPY_WEIGHT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SHOP_SKIN">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SHOP_SKIN">
+        <MappingFragment StoreEntitySet="F_CAB_SHOP_SKIN">
+          <ScalarProperty Name="SPSN_FK_PICT_SEQ" ColumnName="SPSN_FK_PICT_SEQ" />
+          <ScalarProperty Name="SPSN_SEQUENCE" ColumnName="SPSN_SEQUENCE" />
+          <ScalarProperty Name="SPSN_CODE" ColumnName="SPSN_CODE" />
+          <ScalarProperty Name="SPSN_DESCRIPTION" ColumnName="SPSN_DESCRIPTION" />
+          <ScalarProperty Name="SPSN_REMARK" ColumnName="SPSN_REMARK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_SPECIAL_DATES">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_SPECIAL_DATES">
+        <MappingFragment StoreEntitySet="F_CAB_SPECIAL_DATES">
+          <ScalarProperty Name="SPDA_EXT_ID" ColumnName="SPDA_EXT_ID" />
+          <ScalarProperty Name="SPDA_SEQUENCE" ColumnName="SPDA_SEQUENCE" />
+          <ScalarProperty Name="SPDA_DATETIME" ColumnName="SPDA_DATETIME" />
+          <ScalarProperty Name="SPDA_DESCRIPTION" ColumnName="SPDA_DESCRIPTION" />
+          <ScalarProperty Name="SPDA_TYPE" ColumnName="SPDA_TYPE" />
+          <ScalarProperty Name="SPDA_CREATED_ON" ColumnName="SPDA_CREATED_ON" />
+          <ScalarProperty Name="SPDA_CREATED_BY" ColumnName="SPDA_CREATED_BY" />
+          <ScalarProperty Name="SPDA_MODIFIED_ON" ColumnName="SPDA_MODIFIED_ON" />
+          <ScalarProperty Name="SPDA_MODIFIED_BY" ColumnName="SPDA_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_TOPRINT">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_TOPRINT">
+        <MappingFragment StoreEntitySet="F_CAB_TOPRINT">
+          <ScalarProperty Name="TOPR_SEQUENCE" ColumnName="TOPR_SEQUENCE" />
+          <ScalarProperty Name="TOPR_FK_BUYER" ColumnName="TOPR_FK_BUYER" />
+          <ScalarProperty Name="TOPR_FK_GROWER" ColumnName="TOPR_FK_GROWER" />
+          <ScalarProperty Name="TOPR_FK_CUSTOMER" ColumnName="TOPR_FK_CUSTOMER" />
+          <ScalarProperty Name="TOPR_FK_EXT_CODE" ColumnName="TOPR_FK_EXT_CODE" />
+          <ScalarProperty Name="TOPR_FK_LAYOUT" ColumnName="TOPR_FK_LAYOUT" />
+          <ScalarProperty Name="TOPR_DEADLINE" ColumnName="TOPR_DEADLINE" />
+          <ScalarProperty Name="TOPR_NUMBER_OF_COPIES" ColumnName="TOPR_NUMBER_OF_COPIES" />
+          <ScalarProperty Name="TOPR_IS_PRINTED_YN" ColumnName="TOPR_IS_PRINTED_YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_TOPRINT_PARM">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_TOPRINT_PARM">
+        <MappingFragment StoreEntitySet="F_CAB_TOPRINT_PARM">
+          <ScalarProperty Name="TOPA_SEQUENCE" ColumnName="TOPA_SEQUENCE" />
+          <ScalarProperty Name="TOPA_FK_TOPRINT" ColumnName="TOPA_FK_TOPRINT" />
+          <ScalarProperty Name="TOPA_FK_LAYOUT_PARM" ColumnName="TOPA_FK_LAYOUT_PARM" />
+          <ScalarProperty Name="TOPA_PARM_VALUE" ColumnName="TOPA_PARM_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_TRANSLATION">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_TRANSLATION">
+        <MappingFragment StoreEntitySet="F_CAB_TRANSLATION">
+          <ScalarProperty Name="CATR_SEQUENCE" ColumnName="CATR_SEQUENCE" />
+          <ScalarProperty Name="CATR_FK_LANGUAGE" ColumnName="CATR_FK_LANGUAGE" />
+          <ScalarProperty Name="CATR_WINDOW_NAME" ColumnName="CATR_WINDOW_NAME" />
+          <ScalarProperty Name="CATR_LABEL_ID" ColumnName="CATR_LABEL_ID" />
+          <ScalarProperty Name="CATR_LABEL_NAME" ColumnName="CATR_LABEL_NAME" />
+          <ScalarProperty Name="CATR_LABEL_DESCRIPTION" ColumnName="CATR_LABEL_DESCRIPTION" />
+          <ScalarProperty Name="CATR_CREATED_ON" ColumnName="CATR_CREATED_ON" />
+          <ScalarProperty Name="CATR_CREATED_BY" ColumnName="CATR_CREATED_BY" />
+          <ScalarProperty Name="CATR_MODIFIED_ON" ColumnName="CATR_MODIFIED_ON" />
+          <ScalarProperty Name="CATR_MODIFIED_BY" ColumnName="CATR_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_TRANSLATIONS_DATA">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_TRANSLATIONS_DATA">
+        <MappingFragment StoreEntitySet="F_CAB_TRANSLATIONS_DATA">
+          <ScalarProperty Name="CTRD_SEQUENCE" ColumnName="CTRD_SEQUENCE" />
+          <ScalarProperty Name="CTRD_FK_LANGUAGE" ColumnName="CTRD_FK_LANGUAGE" />
+          <ScalarProperty Name="CTRD_FK_REF_SEQ" ColumnName="CTRD_FK_REF_SEQ" />
+          <ScalarProperty Name="CTRD_FK_REF_TYPE" ColumnName="CTRD_FK_REF_TYPE" />
+          <ScalarProperty Name="CTRD_DESCRIPTION" ColumnName="CTRD_DESCRIPTION" />
+          <ScalarProperty Name="CTRD_MODIFIED_ON" ColumnName="CTRD_MODIFIED_ON" />
+          <ScalarProperty Name="CTRD_MODIFIED_BY" ColumnName="CTRD_MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_VALIDATOR">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_VALIDATOR">
+        <MappingFragment StoreEntitySet="F_CAB_VALIDATOR">
+          <ScalarProperty Name="VALI_SEQUENCE" ColumnName="VALI_SEQUENCE" />
+          <ScalarProperty Name="VALI_VALIDATOR" ColumnName="VALI_VALIDATOR" />
+          <ScalarProperty Name="VALI_CREATED_ON" ColumnName="VALI_CREATED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_VBN_DETAIL">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_VBN_DETAIL">
+        <MappingFragment StoreEntitySet="F_CAB_VBN_DETAIL">
+          <ScalarProperty Name="VBND_SEQUENCE" ColumnName="VBND_SEQUENCE" />
+          <ScalarProperty Name="VBND_FK_VBN_CODE" ColumnName="VBND_FK_VBN_CODE" />
+          <ScalarProperty Name="VBND_FK_TYPE" ColumnName="VBND_FK_TYPE" />
+          <ScalarProperty Name="VBND_VALUE" ColumnName="VBND_VALUE" />
+          <ScalarProperty Name="VBND_VALUE_DESC" ColumnName="VBND_VALUE_DESC" />
+          <ScalarProperty Name="VBND_VALUE_DESC_UPPER" ColumnName="VBND_VALUE_DESC_UPPER" />
+          <ScalarProperty Name="VBND_ORDER" ColumnName="VBND_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_VBN_PROPERTIES_SPECIFIED">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_VBN_PROPERTIES_SPECIFIED">
+        <MappingFragment StoreEntitySet="F_CAB_VBN_PROPERTIES_SPECIFIED">
+          <ScalarProperty Name="CVPS_SEQUENCE" ColumnName="CVPS_SEQUENCE" />
+          <ScalarProperty Name="CVPS_VBN_CODE" ColumnName="CVPS_VBN_CODE" />
+          <ScalarProperty Name="CVPS_VBN_PROP_CODE" ColumnName="CVPS_VBN_PROP_CODE" />
+          <ScalarProperty Name="CVPS_MANDATORY_YN" ColumnName="CVPS_MANDATORY_YN" />
+          <ScalarProperty Name="CVPS_SORT_ORDER" ColumnName="CVPS_SORT_ORDER" />
+          <ScalarProperty Name="CVPS_VALID_FROM" ColumnName="CVPS_VALID_FROM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_VBN_VKC">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_VBN_VKC">
+        <MappingFragment StoreEntitySet="F_CAB_VBN_VKC">
+          <ScalarProperty Name="VBVK_SEQUENCE" ColumnName="VBVK_SEQUENCE" />
+          <ScalarProperty Name="VBVK_VKC_CODE" ColumnName="VBVK_VKC_CODE" />
+          <ScalarProperty Name="VBVK_VBN_CODE" ColumnName="VBVK_VBN_CODE" />
+          <ScalarProperty Name="VBVK_VBN_DESC" ColumnName="VBVK_VBN_DESC" />
+          <ScalarProperty Name="VBVK_VBN_GROUP" ColumnName="VBVK_VBN_GROUP" />
+          <ScalarProperty Name="VBVK_VBN_GROUP_CODE" ColumnName="VBVK_VBN_GROUP_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_WELCOME">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_WELCOME">
+        <MappingFragment StoreEntitySet="F_CAB_WELCOME">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="WelcomeText" ColumnName="WelcomeText" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+          <ScalarProperty Name="GCRecord" ColumnName="GCRecord" />
+          <ScalarProperty Name="UserSequence" ColumnName="UserSequence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_DEBUG_LOG">
+      <EntityTypeMapping TypeName="LogiCAB.F_DEBUG_LOG">
+        <MappingFragment StoreEntitySet="F_DEBUG_LOG">
+          <ScalarProperty Name="DEBG_SEQUENCE" ColumnName="DEBG_SEQUENCE" />
+          <ScalarProperty Name="DEBG_FK_LOGIN" ColumnName="DEBG_FK_LOGIN" />
+          <ScalarProperty Name="DEBG_CLASSNAME" ColumnName="DEBG_CLASSNAME" />
+          <ScalarProperty Name="DEBG_ACTION" ColumnName="DEBG_ACTION" />
+          <ScalarProperty Name="DEBG_CREATED_ON" ColumnName="DEBG_CREATED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_DONE_EXPORT">
+      <EntityTypeMapping TypeName="LogiCAB.F_DONE_EXPORT">
+        <MappingFragment StoreEntitySet="F_DONE_EXPORT">
+          <ScalarProperty Name="DONX_SEQUENCE" ColumnName="DONX_SEQUENCE" />
+          <ScalarProperty Name="DONX_FK_TYPE" ColumnName="DONX_FK_TYPE" />
+          <ScalarProperty Name="DONX_FK_SEQ" ColumnName="DONX_FK_SEQ" />
+          <ScalarProperty Name="DONX_CREATED_ON" ColumnName="DONX_CREATED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_DONE_SCRIPTS">
+      <EntityTypeMapping TypeName="LogiCAB.F_DONE_SCRIPTS">
+        <MappingFragment StoreEntitySet="F_DONE_SCRIPTS">
+          <ScalarProperty Name="DOSC_SEQUENCE" ColumnName="DOSC_SEQUENCE" />
+          <ScalarProperty Name="DOSC_NAME" ColumnName="DOSC_NAME" />
+          <ScalarProperty Name="DOSC_DATETIME" ColumnName="DOSC_DATETIME" />
+          <ScalarProperty Name="DOSC_MODULE" ColumnName="DOSC_MODULE" />
+          <ScalarProperty Name="DOSC_VERSION" ColumnName="DOSC_VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_SUPPORT_LOG">
+      <EntityTypeMapping TypeName="LogiCAB.F_SUPPORT_LOG">
+        <MappingFragment StoreEntitySet="F_SUPPORT_LOG">
+          <ScalarProperty Name="SULO_SEQUENCE" ColumnName="SULO_SEQUENCE" />
+          <ScalarProperty Name="SULO_REFERENCE" ColumnName="SULO_REFERENCE" />
+          <ScalarProperty Name="SULO_PROCESS" ColumnName="SULO_PROCESS" />
+          <ScalarProperty Name="SULO_FROM" ColumnName="SULO_FROM" />
+          <ScalarProperty Name="SULO_MESSAGE" ColumnName="SULO_MESSAGE" />
+          <ScalarProperty Name="SULO_CREATED_ON" ColumnName="SULO_CREATED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_SYB_SOFTLOCK">
+      <EntityTypeMapping TypeName="LogiCAB.F_SYB_SOFTLOCK">
+        <MappingFragment StoreEntitySet="F_SYB_SOFTLOCK">
+          <ScalarProperty Name="SYSO_SPID" ColumnName="SYSO_SPID" />
+          <ScalarProperty Name="SYSO_ITEM_NAME" ColumnName="SYSO_ITEM_NAME" />
+          <ScalarProperty Name="SYSO_VALUE" ColumnName="SYSO_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogiEngine_Log">
+      <EntityTypeMapping TypeName="LogiCAB.LogiEngine_Log">
+        <MappingFragment StoreEntitySet="LogiEngine_Log">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Procedure" ColumnName="Procedure" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Exception" ColumnName="Exception" />
+          <ScalarProperty Name="ConversationGroup" ColumnName="ConversationGroup" />
+          <ScalarProperty Name="MessageBody" ColumnName="MessageBody" />
+          <ScalarProperty Name="MessageType" ColumnName="MessageType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogiPlaza_Advertisements">
+      <EntityTypeMapping TypeName="LogiCAB.LogiPlaza_Advertisements">
+        <MappingFragment StoreEntitySet="LogiPlaza_Advertisements">
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ImageList" ColumnName="ImageList" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogiPlaza_News">
+      <EntityTypeMapping TypeName="LogiCAB.LogiPlaza_News">
+        <MappingFragment StoreEntitySet="LogiPlaza_News">
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TickerContent" ColumnName="TickerContent" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModuleInfo">
+      <EntityTypeMapping TypeName="LogiCAB.ModuleInfo">
+        <MappingFragment StoreEntitySet="ModuleInfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AssemblyFileName" ColumnName="AssemblyFileName" />
+          <ScalarProperty Name="IsMain" ColumnName="IsMain" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Party">
+      <EntityTypeMapping TypeName="LogiCAB.Party">
+        <MappingFragment StoreEntitySet="Party">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+          <ScalarProperty Name="GCRecord" ColumnName="GCRecord" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersistentPermission">
+      <EntityTypeMapping TypeName="LogiCAB.PersistentPermission">
+        <MappingFragment StoreEntitySet="PersistentPermission">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="SerializedPermission" ColumnName="SerializedPermission" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+          <ScalarProperty Name="GCRecord" ColumnName="GCRecord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Person">
+      <EntityTypeMapping TypeName="LogiCAB.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhoneNumber">
+      <EntityTypeMapping TypeName="LogiCAB.PhoneNumber">
+        <MappingFragment StoreEntitySet="PhoneNumber">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="PhoneType" ColumnName="PhoneType" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+          <ScalarProperty Name="GCRecord" ColumnName="GCRecord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportData">
+      <EntityTypeMapping TypeName="LogiCAB.ReportData">
+        <MappingFragment StoreEntitySet="ReportData">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ObjectTypeName" ColumnName="ObjectTypeName" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsInplaceReport" ColumnName="IsInplaceReport" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+          <ScalarProperty Name="GCRecord" ColumnName="GCRecord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="LogiCAB.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleBase">
+      <EntityTypeMapping TypeName="LogiCAB.RoleBase">
+        <MappingFragment StoreEntitySet="RoleBase">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+          <ScalarProperty Name="GCRecord" ColumnName="GCRecord" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="LogiCAB.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="StoredPassword" ColumnName="StoredPassword" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ChangePasswordOnFirstLogon" ColumnName="ChangePasswordOnFirstLogon" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserExt">
+      <EntityTypeMapping TypeName="LogiCAB.UserExt">
+        <MappingFragment StoreEntitySet="UserExt">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="F_CAB_CD_MAIN_GROUP_TYPE" ColumnName="F_CAB_CD_MAIN_GROUP_TYPE" />
+          <ScalarProperty Name="F_CAB_PERSON" ColumnName="F_CAB_PERSON" />
+          <ScalarProperty Name="F_CAB_ORGANISATION" ColumnName="F_CAB_ORGANISATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserUsers_RoleRoles">
+      <EntityTypeMapping TypeName="LogiCAB.UserUsers_RoleRoles">
+        <MappingFragment StoreEntitySet="UserUsers_RoleRoles">
+          <ScalarProperty Name="Roles" ColumnName="Roles" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XPObjectType">
+      <EntityTypeMapping TypeName="LogiCAB.XPObjectType">
+        <MappingFragment StoreEntitySet="XPObjectType">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="AssemblyName" ColumnName="AssemblyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XpoSequencer">
+      <EntityTypeMapping TypeName="LogiCAB.XpoSequencer">
+        <MappingFragment StoreEntitySet="XpoSequencer">
+          <ScalarProperty Name="Oid" ColumnName="Oid" />
+          <ScalarProperty Name="SequencePrefix" ColumnName="SequencePrefix" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="OptimisticLockField" ColumnName="OptimisticLockField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Articles">
+      <EntityTypeMapping TypeName="LogiCAB.Articles">
+        <MappingFragment StoreEntitySet="Articles">
+          <ScalarProperty Name="OFDT_SEQUENCE" ColumnName="OFDT_SEQUENCE" />
+          <ScalarProperty Name="CABC_CAB_DESC_UPPER" ColumnName="CABC_CAB_DESC_UPPER" />
+          <ScalarProperty Name="CDGR_SEQUENCE" ColumnName="CDGR_SEQUENCE" />
+          <ScalarProperty Name="CDGR_DESC" ColumnName="CDGR_DESC" />
+          <ScalarProperty Name="OFDT_FK_PICTURE" ColumnName="OFDT_FK_PICTURE" />
+          <ScalarProperty Name="OFDT_FK_GREL_SEQ" ColumnName="OFDT_FK_GREL_SEQ" />
+          <ScalarProperty Name="OFDT_NUM_OF_ITEMS" ColumnName="OFDT_NUM_OF_ITEMS" />
+          <ScalarProperty Name="CACA_NUM_OF_UNITS" ColumnName="CACA_NUM_OF_UNITS" />
+          <ScalarProperty Name="OFDT_ITEM_PRICE" ColumnName="OFDT_ITEM_PRICE" />
+          <ScalarProperty Name="PROP_VAL1" ColumnName="PROP_VAL1" />
+          <ScalarProperty Name="PROP_VAL2" ColumnName="PROP_VAL2" />
+          <ScalarProperty Name="PROP_VAL3" ColumnName="PROP_VAL3" />
+          <ScalarProperty Name="PROP_VAL4" ColumnName="PROP_VAL4" />
+          <ScalarProperty Name="PROP_VAL5" ColumnName="PROP_VAL5" />
+          <ScalarProperty Name="PROP_VAL6" ColumnName="PROP_VAL6" />
+          <ScalarProperty Name="OFHD_FK_GROWER" ColumnName="OFHD_FK_GROWER" />
+          <ScalarProperty Name="OFHD_FK_BUYER" ColumnName="OFHD_FK_BUYER" />
+          <ScalarProperty Name="OFHD_VALID_FROM" ColumnName="OFHD_VALID_FROM" />
+          <ScalarProperty Name="OFHD_VALID_TO" ColumnName="OFHD_VALID_TO" />
+          <ScalarProperty Name="OFHD_DELETED_YN" ColumnName="OFHD_DELETED_YN" />
+          <ScalarProperty Name="OFHD_DELETED_BY_OWNER_YN" ColumnName="OFHD_DELETED_BY_OWNER_YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_ALL_PROPS_EXTENDED">
+      <EntityTypeMapping TypeName="LogiCAB.V_ALL_PROPS_EXTENDED">
+        <MappingFragment StoreEntitySet="V_ALL_PROPS_EXTENDED">
+          <ScalarProperty Name="Pre1" ColumnName="Pre1" />
+          <ScalarProperty Name="Val1" ColumnName="Val1" />
+          <ScalarProperty Name="Pre2" ColumnName="Pre2" />
+          <ScalarProperty Name="Val2" ColumnName="Val2" />
+          <ScalarProperty Name="Pre3" ColumnName="Pre3" />
+          <ScalarProperty Name="Val3" ColumnName="Val3" />
+          <ScalarProperty Name="Pre4" ColumnName="Pre4" />
+          <ScalarProperty Name="Val4" ColumnName="Val4" />
+          <ScalarProperty Name="Pre5" ColumnName="Pre5" />
+          <ScalarProperty Name="Val5" ColumnName="Val5" />
+          <ScalarProperty Name="Pre6" ColumnName="Pre6" />
+          <ScalarProperty Name="Val6" ColumnName="Val6" />
+          <ScalarProperty Name="PROP_HG" ColumnName="PROP_HG" />
+          <ScalarProperty Name="PROP_PM" ColumnName="PROP_PM" />
+          <ScalarProperty Name="PROP_KL" ColumnName="PROP_KL" />
+          <ScalarProperty Name="PROP_VORM" ColumnName="PROP_VORM" />
+          <ScalarProperty Name="Desc1" ColumnName="Desc1" />
+          <ScalarProperty Name="Desc2" ColumnName="Desc2" />
+          <ScalarProperty Name="Desc3" ColumnName="Desc3" />
+          <ScalarProperty Name="Desc4" ColumnName="Desc4" />
+          <ScalarProperty Name="Desc5" ColumnName="Desc5" />
+          <ScalarProperty Name="Desc6" ColumnName="Desc6" />
+          <ScalarProperty Name="CABC_SEQUENCE" ColumnName="CABC_SEQUENCE" />
+          <ScalarProperty Name="CDMG_SEQUENCE" ColumnName="CDMG_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_CAB_MAIN_GROUP">
+      <EntityTypeMapping TypeName="LogiCAB.V_CAB_MAIN_GROUP">
+        <MappingFragment StoreEntitySet="V_CAB_MAIN_GROUP">
+          <ScalarProperty Name="CABC_SEQUENCE" ColumnName="CABC_SEQUENCE" />
+          <ScalarProperty Name="CABC_CAB_CODE" ColumnName="CABC_CAB_CODE" />
+          <ScalarProperty Name="CDMG_SEQUENCE" ColumnName="CDMG_SEQUENCE" />
+          <ScalarProperty Name="CDMG_DESC" ColumnName="CDMG_DESC" />
+          <ScalarProperty Name="ORMA_FK_ORGA" ColumnName="ORMA_FK_ORGA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_CAB_SHOP_PROPERTY">
+      <EntityTypeMapping TypeName="LogiCAB.V_CAB_SHOP_PROPERTY">
+        <MappingFragment StoreEntitySet="V_CAB_SHOP_PROPERTY">
+          <ScalarProperty Name="SPPY_FK_SHOP" ColumnName="SPPY_FK_SHOP" />
+          <ScalarProperty Name="SPPY_FK_SPSN" ColumnName="SPPY_FK_SPSN" />
+          <ScalarProperty Name="SPPY_SERVICE" ColumnName="SPPY_SERVICE" />
+          <ScalarProperty Name="SPPY_NAME" ColumnName="SPPY_NAME" />
+          <ScalarProperty Name="SPPY_VALUE" ColumnName="SPPY_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_FIXED_CAB_PROPS">
+      <EntityTypeMapping TypeName="LogiCAB.V_FIXED_CAB_PROPS">
+        <MappingFragment StoreEntitySet="V_FIXED_CAB_PROPS">
+          <ScalarProperty Name="DESC_PROPS" ColumnName="DESC_PROPS" />
+          <ScalarProperty Name="CAB_DESC" ColumnName="CAB_DESC" />
+          <ScalarProperty Name="PROPS" ColumnName="PROPS" />
+          <ScalarProperty Name="DESC_ALL_PROPS" ColumnName="DESC_ALL_PROPS" />
+          <ScalarProperty Name="CABC_CAB_CODE" ColumnName="CABC_CAB_CODE" />
+          <ScalarProperty Name="CABC_SEQUENCE" ColumnName="CABC_SEQUENCE" />
+          <ScalarProperty Name="PROP_HG" ColumnName="PROP_HG" />
+          <ScalarProperty Name="PROP_PM" ColumnName="PROP_PM" />
+          <ScalarProperty Name="PROP_KL" ColumnName="PROP_KL" />
+          <ScalarProperty Name="PROP_VORM" ColumnName="PROP_VORM" />
+          <ScalarProperty Name="Pre1" ColumnName="Pre1" />
+          <ScalarProperty Name="Val1" ColumnName="Val1" />
+          <ScalarProperty Name="Pre2" ColumnName="Pre2" />
+          <ScalarProperty Name="Val2" ColumnName="Val2" />
+          <ScalarProperty Name="Pre3" ColumnName="Pre3" />
+          <ScalarProperty Name="Val3" ColumnName="Val3" />
+          <ScalarProperty Name="Pre4" ColumnName="Pre4" />
+          <ScalarProperty Name="Val4" ColumnName="Val4" />
+          <ScalarProperty Name="Pre5" ColumnName="Pre5" />
+          <ScalarProperty Name="Val5" ColumnName="Val5" />
+          <ScalarProperty Name="Pre6" ColumnName="Pre6" />
+          <ScalarProperty Name="Val6" ColumnName="Val6" />
+          <ScalarProperty Name="Desc1" ColumnName="Desc1" />
+          <ScalarProperty Name="Desc2" ColumnName="Desc2" />
+          <ScalarProperty Name="Desc3" ColumnName="Desc3" />
+          <ScalarProperty Name="Desc4" ColumnName="Desc4" />
+          <ScalarProperty Name="Desc5" ColumnName="Desc5" />
+          <ScalarProperty Name="Desc6" ColumnName="Desc6" />
+          <ScalarProperty Name="CDMG_SEQUENCE" ColumnName="CDMG_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_FIXED_CAB_PROPS_KAN_NA_TESTEN_WEG">
+      <EntityTypeMapping TypeName="LogiCAB.V_FIXED_CAB_PROPS_KAN_NA_TESTEN_WEG">
+        <MappingFragment StoreEntitySet="V_FIXED_CAB_PROPS_KAN_NA_TESTEN_WEG">
+          <ScalarProperty Name="DESC_PROPS" ColumnName="DESC_PROPS" />
+          <ScalarProperty Name="CAB_DESC" ColumnName="CAB_DESC" />
+          <ScalarProperty Name="PROPS" ColumnName="PROPS" />
+          <ScalarProperty Name="CABC_CAB_CODE" ColumnName="CABC_CAB_CODE" />
+          <ScalarProperty Name="CABC_SEQUENCE" ColumnName="CABC_SEQUENCE" />
+          <ScalarProperty Name="PROP_HG" ColumnName="PROP_HG" />
+          <ScalarProperty Name="PROP_PM" ColumnName="PROP_PM" />
+          <ScalarProperty Name="PROP_KL" ColumnName="PROP_KL" />
+          <ScalarProperty Name="PROP_VORM" ColumnName="PROP_VORM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_GROUP_FILTER">
+      <EntityTypeMapping TypeName="LogiCAB.V_GROUP_FILTER">
+        <MappingFragment StoreEntitySet="V_GROUP_FILTER">
+          <ScalarProperty Name="MainGroupSequence" ColumnName="MainGroupSequence" />
+          <ScalarProperty Name="GroupTypeSequence" ColumnName="GroupTypeSequence" />
+          <ScalarProperty Name="GroupSequence" ColumnName="GroupSequence" />
+          <ScalarProperty Name="CDGR_SEQUENCE" ColumnName="CDGR_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_GROWER_CAB">
+      <EntityTypeMapping TypeName="LogiCAB.V_GROWER_CAB">
+        <MappingFragment StoreEntitySet="V_GROWER_CAB">
+          <ScalarProperty Name="ORGA_NAME" ColumnName="ORGA_NAME" />
+          <ScalarProperty Name="CABC_CAB_DESC" ColumnName="CABC_CAB_DESC" />
+          <ScalarProperty Name="CABC_CAB_CODE" ColumnName="CABC_CAB_CODE" />
+          <ScalarProperty Name="REQUESTED_BY" ColumnName="REQUESTED_BY" />
+          <ScalarProperty Name="GRAS_START_DATE" ColumnName="GRAS_START_DATE" />
+          <ScalarProperty Name="GRAS_END_DATE" ColumnName="GRAS_END_DATE" />
+          <ScalarProperty Name="GRAS_NUM_OF_M2" ColumnName="GRAS_NUM_OF_M2" />
+          <ScalarProperty Name="GRAS_NUM_OF_ITEMS" ColumnName="GRAS_NUM_OF_ITEMS" />
+          <ScalarProperty Name="GRAS_SELECTED_YN" ColumnName="GRAS_SELECTED_YN" />
+          <ScalarProperty Name="CDMG_DESC" ColumnName="CDMG_DESC" />
+          <ScalarProperty Name="CDGT_DESC" ColumnName="CDGT_DESC" />
+          <ScalarProperty Name="CDGR_DESC" ColumnName="CDGR_DESC" />
+          <ScalarProperty Name="GRAS_SEQUENCE" ColumnName="GRAS_SEQUENCE" />
+          <ScalarProperty Name="GROW_SEQUENCE" ColumnName="GROW_SEQUENCE" />
+          <ScalarProperty Name="ORGA_SEQUENCE" ColumnName="ORGA_SEQUENCE" />
+          <ScalarProperty Name="CABC_SEQUENCE" ColumnName="CABC_SEQUENCE" />
+          <ScalarProperty Name="CDMG_SEQUENCE" ColumnName="CDMG_SEQUENCE" />
+          <ScalarProperty Name="CDGT_SEQUENCE" ColumnName="CDGT_SEQUENCE" />
+          <ScalarProperty Name="CDGR_SEQUENCE" ColumnName="CDGR_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_LOGIN">
+      <EntityTypeMapping TypeName="LogiCAB.V_LOGIN">
+        <MappingFragment StoreEntitySet="V_LOGIN">
+          <ScalarProperty Name="LOGI_USER_NAME" ColumnName="LOGI_USER_NAME" />
+          <ScalarProperty Name="LOGI_PASS" ColumnName="LOGI_PASS" />
+          <ScalarProperty Name="PERS_NAME" ColumnName="PERS_NAME" />
+          <ScalarProperty Name="PERS_FIRST_NAME" ColumnName="PERS_FIRST_NAME" />
+          <ScalarProperty Name="PERS_MIDDLE_NAME" ColumnName="PERS_MIDDLE_NAME" />
+          <ScalarProperty Name="PERS_LAST_NAME" ColumnName="PERS_LAST_NAME" />
+          <ScalarProperty Name="ORGA_NAME" ColumnName="ORGA_NAME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="ORAD_STATUS" ColumnName="ORAD_STATUS" />
+          <ScalarProperty Name="ORAD_DATE" ColumnName="ORAD_DATE" />
+          <ScalarProperty Name="LOGI_SEQUENCE" ColumnName="LOGI_SEQUENCE" />
+          <ScalarProperty Name="PERS_SEQUENCE" ColumnName="PERS_SEQUENCE" />
+          <ScalarProperty Name="ORGA_SEQUENCE" ColumnName="ORGA_SEQUENCE" />
+          <ScalarProperty Name="ORAD_SEQUENCE" ColumnName="ORAD_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_OFFER_DETAILS">
+      <EntityTypeMapping TypeName="LogiCAB.V_OFFER_DETAILS">
+        <MappingFragment StoreEntitySet="V_OFFER_DETAILS">
+          <ScalarProperty Name="OFHD_FK_DMHD_SEQ" ColumnName="OFHD_FK_DMHD_SEQ" />
+          <ScalarProperty Name="OFDT_SEQUENCE" ColumnName="OFDT_SEQUENCE" />
+          <ScalarProperty Name="OFHD_SEQUENCE" ColumnName="OFHD_SEQUENCE" />
+          <ScalarProperty Name="GROW_SEQUENCE" ColumnName="GROW_SEQUENCE" />
+          <ScalarProperty Name="BUYR_SEQUENCE" ColumnName="BUYR_SEQUENCE" />
+          <ScalarProperty Name="OFHD_FK_SHOP" ColumnName="OFHD_FK_SHOP" />
+          <ScalarProperty Name="OFHD_OFFER_TYPE" ColumnName="OFHD_OFFER_TYPE" />
+          <ScalarProperty Name="OFHD_FK_MAIN_GROUP" ColumnName="OFHD_FK_MAIN_GROUP" />
+          <ScalarProperty Name="OFDT_FK_PYDT" ColumnName="OFDT_FK_PYDT" />
+          <ScalarProperty Name="OFHD_VALID_FROM" ColumnName="OFHD_VALID_FROM" />
+          <ScalarProperty Name="OFHD_VALID_TO" ColumnName="OFHD_VALID_TO" />
+          <ScalarProperty Name="UnitsAvailable" ColumnName="UnitsAvailable" />
+          <ScalarProperty Name="LATEST_DELIVERY_DATE_TIME" ColumnName="LATEST_DELIVERY_DATE_TIME" />
+          <ScalarProperty Name="LATEST_ORDER_DATE_TIME" ColumnName="LATEST_ORDER_DATE_TIME" />
+          <ScalarProperty Name="ItemsPerUnit" ColumnName="ItemsPerUnit" />
+          <ScalarProperty Name="ItemPrice" ColumnName="ItemPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_OFFER_HEADERS">
+      <EntityTypeMapping TypeName="LogiCAB.V_OFFER_HEADERS">
+        <MappingFragment StoreEntitySet="V_OFFER_HEADERS">
+          <ScalarProperty Name="OFHD_NO" ColumnName="OFHD_NO" />
+          <ScalarProperty Name="OFHD_VALID_FROM" ColumnName="OFHD_VALID_FROM" />
+          <ScalarProperty Name="OFHD_VALID_TO" ColumnName="OFHD_VALID_TO" />
+          <ScalarProperty Name="OFHD_DELETED_YN" ColumnName="OFHD_DELETED_YN" />
+          <ScalarProperty Name="GROWER" ColumnName="GROWER" />
+          <ScalarProperty Name="BUYER" ColumnName="BUYER" />
+          <ScalarProperty Name="CDMG_DESC" ColumnName="CDMG_DESC" />
+          <ScalarProperty Name="OFHD_SEQUENCE" ColumnName="OFHD_SEQUENCE" />
+          <ScalarProperty Name="GROW_ORGA" ColumnName="GROW_ORGA" />
+          <ScalarProperty Name="GROW_SEQUENCE" ColumnName="GROW_SEQUENCE" />
+          <ScalarProperty Name="BUYR_ORGA" ColumnName="BUYR_ORGA" />
+          <ScalarProperty Name="BUYR_SEQUENCE" ColumnName="BUYR_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_ORDER_DETAILS">
+      <EntityTypeMapping TypeName="LogiCAB.V_ORDER_DETAILS">
+        <MappingFragment StoreEntitySet="V_ORDER_DETAILS">
+          <ScalarProperty Name="ORDE_SEQUENCE" ColumnName="ORDE_SEQUENCE" />
+          <ScalarProperty Name="ORHE_SEQUENCE" ColumnName="ORHE_SEQUENCE" />
+          <ScalarProperty Name="CABC_CAB_DESC" ColumnName="CABC_CAB_DESC" />
+          <ScalarProperty Name="ORDE_CUSTOMER_CODE" ColumnName="ORDE_CUSTOMER_CODE" />
+          <ScalarProperty Name="ORDE_ITEM_PRICE" ColumnName="ORDE_ITEM_PRICE" />
+          <ScalarProperty Name="ORDE_NUM_OF_UNITS" ColumnName="ORDE_NUM_OF_UNITS" />
+          <ScalarProperty Name="ORDE_NUM_OF_ITEMS" ColumnName="ORDE_NUM_OF_ITEMS" />
+          <ScalarProperty Name="ORDE_NUM_OF_ITEMS_PER_UNIT" ColumnName="ORDE_NUM_OF_ITEMS_PER_UNIT" />
+          <ScalarProperty Name="CACA_UNITS_PER_LAYER" ColumnName="CACA_UNITS_PER_LAYER" />
+          <ScalarProperty Name="CACA_LAYERS_PER_TROLLEY" ColumnName="CACA_LAYERS_PER_TROLLEY" />
+          <ScalarProperty Name="Leverancier" ColumnName="Leverancier" />
+          <ScalarProperty Name="GrowerOrgaName" ColumnName="GrowerOrgaName" />
+          <ScalarProperty Name="CDCA_CASK_CODE" ColumnName="CDCA_CASK_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_ORDER_HEADERS">
+      <EntityTypeMapping TypeName="LogiCAB.V_ORDER_HEADERS">
+        <MappingFragment StoreEntitySet="V_ORDER_HEADERS">
+          <ScalarProperty Name="ORHE_NO" ColumnName="ORHE_NO" />
+          <ScalarProperty Name="ORHE_DESC" ColumnName="ORHE_DESC" />
+          <ScalarProperty Name="CDOS_SYS_STATUS" ColumnName="CDOS_SYS_STATUS" />
+          <ScalarProperty Name="BUYER" ColumnName="BUYER" />
+          <ScalarProperty Name="GROWER" ColumnName="GROWER" />
+          <ScalarProperty Name="ORHE_DATE" ColumnName="ORHE_DATE" />
+          <ScalarProperty Name="ORHE_DELIVERY_DATE" ColumnName="ORHE_DELIVERY_DATE" />
+          <ScalarProperty Name="CDMG_DESC" ColumnName="CDMG_DESC" />
+          <ScalarProperty Name="ORHE_NETT_HEADER_VALUE" ColumnName="ORHE_NETT_HEADER_VALUE" />
+          <ScalarProperty Name="DETAILCOUNT" ColumnName="DETAILCOUNT" />
+          <ScalarProperty Name="ORHE_REMARK" ColumnName="ORHE_REMARK" />
+          <ScalarProperty Name="ORHE_SEQUENCE" ColumnName="ORHE_SEQUENCE" />
+          <ScalarProperty Name="GROW_ORGA" ColumnName="GROW_ORGA" />
+          <ScalarProperty Name="GROW_SEQUENCE" ColumnName="GROW_SEQUENCE" />
+          <ScalarProperty Name="BUYR_ORGA" ColumnName="BUYR_ORGA" />
+          <ScalarProperty Name="BUYR_SEQUENCE" ColumnName="BUYR_SEQUENCE" />
+          <ScalarProperty Name="CDMG_SEQUENCE" ColumnName="CDMG_SEQUENCE" />
+          <ScalarProperty Name="CDOS_SEQUENCE" ColumnName="CDOS_SEQUENCE" />
+          <ScalarProperty Name="CDOS_STATUS_DESC" ColumnName="CDOS_STATUS_DESC" />
+          <ScalarProperty Name="ORHE_FK_SHOP" ColumnName="ORHE_FK_SHOP" />
+          <ScalarProperty Name="ORHE_ORDER_TYPE" ColumnName="ORHE_ORDER_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_ORGA_ADMIN">
+      <EntityTypeMapping TypeName="LogiCAB.V_ORGA_ADMIN">
+        <MappingFragment StoreEntitySet="V_ORGA_ADMIN">
+          <ScalarProperty Name="ORAD_FK_ORGANISATION" ColumnName="ORAD_FK_ORGANISATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_ORGA_ADMIN_WITH_BLOCKED">
+      <EntityTypeMapping TypeName="LogiCAB.V_ORGA_ADMIN_WITH_BLOCKED">
+        <MappingFragment StoreEntitySet="V_ORGA_ADMIN_WITH_BLOCKED">
+          <ScalarProperty Name="ORAD_FK_ORGANISATION" ColumnName="ORAD_FK_ORGANISATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_ORGA_MAIN_GROUP">
+      <EntityTypeMapping TypeName="LogiCAB.V_ORGA_MAIN_GROUP">
+        <MappingFragment StoreEntitySet="V_ORGA_MAIN_GROUP">
+          <ScalarProperty Name="A_ORMA_FK_MAIN_GROUP" ColumnName="A_ORMA_FK_MAIN_GROUP" />
+          <ScalarProperty Name="B_ORMA_FK_MAIN_GROUP" ColumnName="B_ORMA_FK_MAIN_GROUP" />
+          <ScalarProperty Name="A_ORGA_SEQUENCE" ColumnName="A_ORGA_SEQUENCE" />
+          <ScalarProperty Name="A_ORGA_NAME" ColumnName="A_ORGA_NAME" />
+          <ScalarProperty Name="B_ORGA_SEQUENCE" ColumnName="B_ORGA_SEQUENCE" />
+          <ScalarProperty Name="B_ORGA_NAME" ColumnName="B_ORGA_NAME" />
+          <ScalarProperty Name="CDMG_SEQUENCE" ColumnName="CDMG_SEQUENCE" />
+          <ScalarProperty Name="CDMG_DESC" ColumnName="CDMG_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_VIEW_ARTICLES">
+      <EntityTypeMapping TypeName="LogiCAB.V_VIEW_ARTICLES">
+        <MappingFragment StoreEntitySet="V_VIEW_ARTICLES">
+          <ScalarProperty Name="CABC_SEQUENCE" ColumnName="CABC_SEQUENCE" />
+          <ScalarProperty Name="CABC_CAB_CODE" ColumnName="CABC_CAB_CODE" />
+          <ScalarProperty Name="CAB_DESC" ColumnName="CAB_DESC" />
+          <ScalarProperty Name="DESC_PROPS" ColumnName="DESC_PROPS" />
+          <ScalarProperty Name="PROPS" ColumnName="PROPS" />
+          <ScalarProperty Name="CDMG_DESC" ColumnName="CDMG_DESC" />
+          <ScalarProperty Name="CDGT_DESC" ColumnName="CDGT_DESC" />
+          <ScalarProperty Name="CDGR_DESC" ColumnName="CDGR_DESC" />
+          <ScalarProperty Name="CDMG_SEQUENCE" ColumnName="CDMG_SEQUENCE" />
+          <ScalarProperty Name="CDGT_SEQUENCE" ColumnName="CDGT_SEQUENCE" />
+          <ScalarProperty Name="CDGR_SEQUENCE" ColumnName="CDGR_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="F_CAB_CD_AUCTION">
+      <EntityTypeMapping TypeName="LogiCAB.F_CAB_CD_AUCTION">
+        <MappingFragment StoreEntitySet="F_CAB_CD_AUCTION">
+          <ScalarProperty Name="CDAU_EDI_EMAIL" ColumnName="CDAU_EDI_EMAIL" />
+          <ScalarProperty Name="CDAU_AUCTION_LETTER_NUMBER_TEXT" ColumnName="CDAU_AUCTION_LETTER_NUMBER_TEXT" />
+          <ScalarProperty Name="CDAU_EXTERNAL_CODE" ColumnName="CDAU_EXTERNAL_CODE" />
+          <ScalarProperty Name="CDAU_CODE" ColumnName="CDAU_CODE" />
+          <ScalarProperty Name="CDAU_DESCRIPTION" ColumnName="CDAU_DESCRIPTION" />
+          <ScalarProperty Name="CDAU_SEQUENCE" ColumnName="CDAU_SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

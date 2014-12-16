@@ -1,0 +1,17 @@
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\bin\Debug\EntityFramework.dll
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\bin\Debug\EntityFramework.xml
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Projects\EDIGenerator\EDIGenerator\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Projects\EDIGenerator\EDIGenerator\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Projects\EDIGenerator\EDIGenerator\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Projects\EDIGenerator\EDIGenerator\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Projects\EDIGenerator\EDIGenerator\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Projects\EDIGenerator\EDIGenerator\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Projects\EDIGenerator\EDIGenerator\ConsoleApplication1\bin\Debug\Dapper.dll
+C:\Projects\EDIGenerator\EDIGenerator\ConsoleApplication1\bin\Debug\Dapper.pdb
+C:\Projects\EDIGenerator\EDIGenerator\ConsoleApplication1\bin\Debug\Dapper.xml

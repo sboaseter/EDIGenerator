@@ -1,0 +1,7 @@
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\bin\Release\ConsoleApplication1.exe.config
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\bin\Release\ConsoleApplication1.exe
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\bin\Release\ConsoleApplication1.pdb
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\bin\Release\EntityFramework.dll
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\bin\Release\EntityFramework.xml
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\obj\Release\ConsoleApplication1.exe
+D:\EAB\Tests\EDIGenerator\ConsoleApplication1\obj\Release\ConsoleApplication1.pdb
